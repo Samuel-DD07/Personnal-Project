@@ -4,7 +4,7 @@ import Banner from "./components/Banner";
 import IphoneStart from './components/Iphone-Start';
 import FilmApple from './components/Film-Apple';
 import ProduitApple from './components/Grille-Produit-Apple';
-
+import Modalite from './components/Modalite';
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       <IphoneStart />
       <FilmApple />
       <ProduitApple />
+      <Modalite />
     </div>
   );
 }
