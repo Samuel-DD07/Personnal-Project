@@ -2,7 +2,7 @@ import DataFilm from "../data/Film-Apple-data";
 
 function FilmApple(){
     const listeFilm = DataFilm.map((Element) =>
-        <a href={Element.link1}>
+        <a href={Element.link1} key={Element.accroche.toString()}>
             <div key={Element.titre} className={Element.class} style={{backgroundImage: `url(${Element.src})`}}>
 
             <div className="titre">{Element.titre}</div>

@@ -3,6 +3,8 @@ import Nav from "./components/Nav";
 import Banner from "./components/Banner";
 import IphoneStart from './components/Iphone-Start';
 import FilmApple from './components/Film-Apple';
+import ProduitApple from './components/Grille-Produit-Apple';
+
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <Banner />
       <IphoneStart />
       <FilmApple />
+      <ProduitApple />
     </div>
   );
 }
