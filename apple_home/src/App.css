@@ -34,6 +34,8 @@
   transition: 0.5s opacity;
 }
 
+/* Banner style */
+
 .Banner{
   display: flex;
   flex-direction: column;
@@ -44,8 +46,6 @@
   width: 100vw;
   text-align: center;
 }
-
-/* Banner style */
 
 .Banner .p1{
   font-weight: 300;
@@ -59,6 +59,7 @@
   line-height: 18px;
 }
 
+/* Iphone 13 */
 
 .Iphone13{
   position: relative;
