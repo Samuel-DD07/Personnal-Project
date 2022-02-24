@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>L'espace</title>
+</head>
+<body>
+</body>
+</html>
+
+<style type="text/css">
+
+	:root{
+		--position_orbite : 0px;
+		--neon : 0;
+		--temps : 0s;
+	}
+
+	@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #000;
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	i{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 20px;
+	}
+
+
+	.planete{
+		background-color: white;
+		box-shadow: 0px 0px 3em 1em white;
+		transition: 1s all;
+		animation: rotate infinite linear;
+		transform: translate(var(--position_orbite));
+
+	}
+
+	.balle{
+		opacity: 0;
+	}
+
+	.rotate{
+		margin-left: var(--position_orbite);
+		transform-origin: calc(0vw - var(--position_orbite)) 0px;
+		animation: rotate infinite linear, opacity_pro linear;
+		box-shadow: 0px 0px 5em 1em var(--neon);
+		opacity: 1;
+		transition: 5s all;
+	}
+
+/*		.rotate p{
+		transform-origin: center;
+		transition: 1s all;
+		animation: rotate_self var(--temps) infinite linear;
+	}
+
+	@keyframes rotate_self{
+		from{
+			transform: rotate(0deg);
+		}
+		to{
+			transform: rotate(-360deg);
+		}
+	}*/
+
+	@keyframes rotate{
+		from{
+			margin-left: translate(0vw);
+			transform: rotate(0deg);
+		}
+		to{
+			transform: translate(var(--position_orbite));
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes opacity_pro{
+		from{
+			opacity: 0;
+		}
+		to{
+			opacity: 1;
+		}
+	}
+
+</style>
+
+<script type="text/javascript">
+	var body = document.querySelector('body');
+
+	function balle_create(taille, id, position, temps, color, delay) {
+		let balle = document.createElement('i');
+
+		balle.style.position = 'absolute'
+		balle.style.width = taille + 'px';
+		balle.style.height = taille + 'px';
+		balle.style.borderRadius = 500 +'px';
+		balle.style.background = color;
+
+		balle.style.animationDuration = temps/100 +'s';
+		balle.style.setProperty('--position_orbite', position + "vh");
+		balle.style.setProperty('--neon', color);
+		balle.style.setProperty('--temps', temps/100 +'s');
+		balle.classList.add(id);
+		body.appendChild(balle);
+
+		if (balle.classList.contains("balle") == true) {
+			setTimeout(function(){
+		    	let classe = document.querySelector('.balle');
+				classe.classList.replace("balle", "rotate");
+			}, delay);
+		} else {
+			balle.style.zIndex = 10;
+		}
+	};
+
+	function getRandomColor() {
+	  var letters = '0123456789ABCDEF';
+	  var color = '#';
+	  for (var i = 0; i < 6; i++) {
+	    	color += letters[Math.floor(Math.random() * 16)];
+	  }
+	  return color;
+	};
+
+	// creation des elements
+	for (var m = 1; m < 30; m++) {
+		for (var i = 1; i < m; i++) {
+			let position = Math.round(Math.random() * 100 + 5);
+			let temps = Math.round(Math.random() * 200 * i + 500);
+			let taille = Math.random() * 5;
+			balle_create(taille, "balle", position, temps, getRandomColor(), temps*i);
+		}
+	}
+</script>

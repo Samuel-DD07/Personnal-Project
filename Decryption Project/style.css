@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Rounded&family=Inconsolata:wght@300;500;700&family=Lato&family=Noto+Sans+TC:wght@300&family=Source+Sans+Pro&display=swap');
+
+body{
+		margin: 0;
+		padding: 0;
+		font-family: "Inconsolata";
+		background-color: #00008B;
+	}
+
+	#page{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100vh;
+		color: #FFFAFA;
+	}
+
+	#text{
+		text-align: left;
+		margin: 10vw;
+	}
+
+	h1{
+		font-size: 50px;
+		font-weight: 800;
+	}
+
+	h3{
+		font-size: 30px;
+		font-weight: 800;
+		color: #87CEFA;
+	}
+
+	p{
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	[class*="reveal-"]{
+		opacity: 0;
+		transform: translateY(100px);
+		width: 80vw;
+	}
+
+	.reveal-visible{
+		opacity: 1;
+		transform: translateY(0);
+		transition: 1s cubic-bezier(0,1.08,1,1) ;
+	}
+
+.test{
+	display: grid;
+	grid
+}
+
+	.reveal-2{
+		transition-delay: .1s;
+	}
+
+	.reveal-3{
+		transition-delay: .2s;
+	}
