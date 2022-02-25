@@ -5,6 +5,7 @@ import IphoneStart from './components/Iphone-Start';
 import FilmApple from './components/Film-Apple';
 import ProduitApple from './components/Grille-Produit-Apple';
 import Modalite from './components/Modalite';
+import FooterLink from './components/Footer-link';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <FilmApple />
       <ProduitApple />
       <Modalite />
+      <FooterLink />
     </div>
   );
 }

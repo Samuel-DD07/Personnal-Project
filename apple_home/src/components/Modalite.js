@@ -10,7 +10,10 @@ function Modalite(){
     )
     return (
         <div className="modalite">
-            <div className="content">{ListModaliteData}</div>
+            <div className="content">
+                {ListModaliteData}
+                <hr/>
+            </div>
         </div>
     )
 }
