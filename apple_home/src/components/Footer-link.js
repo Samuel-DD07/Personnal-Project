@@ -3,9 +3,11 @@ import FooterCredits from "./Footer-Credits";
 
 function FooterLink(){
     const ListFooterLinkData = FooterLinkData.map((Element) =>
-        <ul className={"grid-" + FooterLinkData.indexOf(Element)}><h5>{Element.titre}</h5>
+        <ul className={"grid-" + FooterLinkData.indexOf(Element)} key={Element.titre.toString()}>
+            <h5>{Element.titre}</h5>
+
             {Object.entries(Element.link).map(([key, value]) =>
-                <li><a className="a" href={value}>{key}</a></li>
+                <li key={key.toString()}><a className="a" href={value}>{key}</a></li>
             )}
         </ul>
     )

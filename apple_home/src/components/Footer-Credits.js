@@ -14,7 +14,7 @@ function FooterCredits(){
 
                 <div className="Links">
                     {Object.entries(FooterCreditsData).map(([key, value]) =>
-                         <a href={value} className="a">{key}</a>
+                         <a key={key.toString()} href={value} className="a">{key}</a>
                     )}
                 </div>
             </div>

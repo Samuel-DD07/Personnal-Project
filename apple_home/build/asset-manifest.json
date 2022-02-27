@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8e61cb08.css",
+    "main.js": "/static/js/main.11c7672c.js",
+    "static/media/hero_ttom__d8cc7msuzey6_large_2x.jpg": "/static/media/hero_ttom__d8cc7msuzey6_large_2x.62fddfc53926ce596f3c.jpg",
+    "static/media/hero_iphone_13__f194u1rdooeq_largetall.jpeg": "/static/media/hero_iphone_13__f194u1rdooeq_largetall.167768c4f4f8669da5d1.jpeg",
+    "static/media/hero_iphone_13pro__dhnsegysa42u_largetall.jpeg": "/static/media/hero_iphone_13pro__dhnsegysa42u_largetall.c1fa547a4dc670119cc5.jpeg",
+    "static/media/tile_winter__bpktzwl6hsc2_large.jpeg": "/static/media/tile_winter__bpktzwl6hsc2_large.d4f22ddece011f1aa3a4.jpeg",
+    "static/media/promo_watch__fo7j0tnywi2q_large.jpeg": "/static/media/promo_watch__fo7j0tnywi2q_large.bc0a8ccc6cbcbb66c4f4.jpeg",
+    "static/media/promo_ipad_mini__spq4zjcuuaie_large.jpeg": "/static/media/promo_ipad_mini__spq4zjcuuaie_large.8bca293ba18b6048cf3e.jpeg",
+    "static/media/tile_watch__e9n11b6m6yq2_large.jpeg": "/static/media/tile_watch__e9n11b6m6yq2_large.85b8053ef545f493ad69.jpeg",
+    "static/media/tile_macbookpro__cx0ur0qg9biq_large.jpeg": "/static/media/tile_macbookpro__cx0ur0qg9biq_large.47738d0ce536e9559dfe.jpeg",
+    "static/media/tile_airpods__fuv6vgn42y2q_large.jpeg": "/static/media/tile_airpods__fuv6vgn42y2q_large.86939f018f741b6c64fc.jpeg",
+    "static/media/globalnav_links_onlyonapple_image__c4t8k97tougm_large.svg": "/static/media/globalnav_links_onlyonapple_image__c4t8k97tougm_large.2aca7cc524e4011c52a1011663baf896.svg",
+    "static/media/globalnav_links_accessories_image__edj0wqmfwxyu_large.svg": "/static/media/globalnav_links_accessories_image__edj0wqmfwxyu_large.4db4e7bfcacdfe3d18503a3c6800e305.svg",
+    "static/media/globalnav_links_support_image__bw9kctll7u3m_large.svg": "/static/media/globalnav_links_support_image__bw9kctll7u3m_large.0d80870e5ef5568c45b58c92f6b3d316.svg",
+    "static/media/globalnav_links_tvhome_image__zb2ewyxbi6ae_large.svg": "/static/media/globalnav_links_tvhome_image__zb2ewyxbi6ae_large.95144075ade5337b384319366199ae9c.svg",
+    "static/media/globalnav_links_store_image__c7jy08initqq_large.svg": "/static/media/globalnav_links_store_image__c7jy08initqq_large.f76f22db0de09f65a5f49e0b00172456.svg",
+    "static/media/globalnav_links_airpods_image__f969s84ivmaa_large.svg": "/static/media/globalnav_links_airpods_image__f969s84ivmaa_large.c8a5900c1348e0542a20d3a5f661fdcb.svg",
+    "static/media/globalnav_links_iphone_image__ko7x4isga4ia_large.svg": "/static/media/globalnav_links_iphone_image__ko7x4isga4ia_large.e33cdc8741c255d1db0bb464f3fc0ef3.svg",
+    "static/media/globalnav_links_watch_image__gkoblojrlsqe_large.svg": "/static/media/globalnav_links_watch_image__gkoblojrlsqe_large.542c088dcac7144a3f2571d4533fd334.svg",
+    "static/media/globalnav_links_ipad_image__fw9qyj9lloi2_large.svg": "/static/media/globalnav_links_ipad_image__fw9qyj9lloi2_large.9eafb0eeea30652e8bffa7e6a033526e.svg",
+    "static/media/globalnav_links_mac_image__dazlko3t9a6a_large.svg": "/static/media/globalnav_links_mac_image__dazlko3t9a6a_large.666116442c408fbcfd80f9bad354ccc8.svg",
+    "static/media/globalnav_apple_image__b5er5ngrzxqq_large.svg": "/static/media/globalnav_apple_image__b5er5ngrzxqq_large.dca800f189014a3c3eab2c30284bea83.svg",
+    "static/media/globalnav_search_image__cbllq1gkias2_large.svg": "/static/media/globalnav_search_image__cbllq1gkias2_large.6daefacf29ecf4ff93d0d089f7910fe5.svg",
+    "index.html": "/index.html",
+    "static/media/globalnav_bag_image__yzte50i47ciu_large.svg": "/static/media/globalnav_bag_image__yzte50i47ciu_large.41f41d59c15e30fc042ccb9a378a3e5e.svg",
+    "main.8e61cb08.css.map": "/static/css/main.8e61cb08.css.map",
+    "main.11c7672c.js.map": "/static/js/main.11c7672c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e61cb08.css",
+    "static/js/main.11c7672c.js"
+  ]
+}

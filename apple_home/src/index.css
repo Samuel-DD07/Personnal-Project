@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    background-color: gray;
   }
   
   *{
@@ -29,17 +30,11 @@ html{
     margin-bottom: 0;
 }
 
-h1{
-  font-size: 48px;
-  font-weight: 500;
-}
-
-h3{
-  font-size: 25px;
-  font-weight: 300;
-}
-
 ul, li{
   text-decoration: none;
   list-style: none;
+}
+
+.App{
+  background-color: white;
 }

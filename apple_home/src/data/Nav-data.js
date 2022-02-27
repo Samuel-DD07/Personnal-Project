@@ -17,7 +17,8 @@ const srcNav = [
     {
         name: "logo",
         src: logo,
-        link: "https://www.apple.com/fr/"
+        link: "https://www.apple.com/fr/",
+        important: true
     },
 
     {
@@ -90,6 +91,7 @@ const srcNav = [
         name: "panier",
         src: panier,
         UserElement: true,
+        important: true
     }]
 
 export default srcNav
