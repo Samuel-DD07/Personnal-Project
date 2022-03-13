@@ -4,7 +4,7 @@ function FooterCredits(){
     return(
         <div className="Credits">
             <div>
-                <p>Vous pouvez aussi faire vos achats <a href="" className="a">dans un Apple Store</a> ou <a href="" className="a">Chez un renvendeur</a>. Ou appeler le 0800 046 046.</p>
+                <p>Vous pouvez aussi faire vos achats <a href="https://www.apple.com/fr/retail/" className="a">dans un Apple Store</a> ou <a href="https://locate.apple.com/fr/fr/" className="a">Chez un renvendeur</a>. Ou appeler le 0800 046 046.</p>
                 <hr/>
 
                 <div className="Copyright">

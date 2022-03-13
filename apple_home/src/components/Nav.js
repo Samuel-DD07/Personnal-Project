@@ -1,6 +1,5 @@
 import srcNav from '../data/Nav-data.js'
 
-
 function Nav(){
     const ListeNav = srcNav.map((element) => 
         <span key={element.name.toString()}>
