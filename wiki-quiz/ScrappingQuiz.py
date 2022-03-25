@@ -1,22 +1,43 @@
 import requests
 from bs4 import BeautifulSoup
+import json
+import urllib.request
 
-def wikiScrapping(recherche):
-    url = "https://fr.wikipedia.org/wiki/" + recherche.replace(" ", "_")
+def ScrappingPicture(nom):
+    url = "https://fr.wikipedia.org/wiki/" + nom.replace(" ", "_")
     requete = requests.get(url)
     page = requete.content
     soup = BeautifulSoup(page, "html.parser" )
 
-    page = soup.find("div", class_="mw-parser-output")
-    children = page.extract()
-    children = children.find_all("p", class_="")[0:10]
+    urlWiki = soup.find("a", class_="image").img["src"]
+    urlPicture = "https:" + urlWiki
+    return nom, urlPicture
 
-    children =  str(children)
 
-    fichier = open("Data/definition.html", "w")
-    fichier.write(children)
+def ScrappingPictureToJSON(TabRecheche):
+    dico_search = {}
+    i = 0
+    while i < len(TabRecheche):
+        image = ScrappingPicture(TabRecheche[i])
+        dico_search[image[0]] = image[1]
+        i+=1
+    return dico_search
+
+
+def dicoToFileJson(dico):
+    fichier = open("Data/picture.json", "w")
+    dico = json.dumps(dico, indent = 4)
+    fichier.write(dico)
     fichier.close()
 
+recherche = [
+    "Emmanuel Macron", 
+    "Emma Watson", 
+    "Samuel L. Jackson", 
+    "Cristiano Ronaldo", 
+    "Justin Bieber", 
+    "Ariana Grande",
+    "Selena Gomez"]
 
-recherche = "Emmanuel Macron"
-wikiScrapping(recherche)
+dicoToFileJson(ScrappingPictureToJSON(recherche))
+
