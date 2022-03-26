@@ -16,40 +16,50 @@ def ScrappingPicture(nom):
         requete = requests.get(url)
         page = requete.content
         soup = BeautifulSoup(page, "html.parser" )
-        urlWiki = soup.find("a", class_="image").img["src"]
-        urlPicture = "https:" + urlWiki
-        return nom, urlPicture
-
+        try :
+            urlWiki = soup.find("a", class_="image").img["src"]
+            urlPicture = "https:" + urlWiki
+            return nom, urlPicture
+        except :
+            return None, None
 
 def createUnderDico(Recherche):
     underDico = {}
     image = ScrappingPicture(Recherche)
-    underDico["Guess"] = image[0]
+    tabAnswer = GeneratorName(3)
+    tabAnswer.append(image[0])
+    underDico["GoodAnswer"] = image[0]
     underDico["Picture"] = image[1]
-    underDico["OtherGuess"] = GeneratorName(3)
+    underDico["AllAnswer"] = tabAnswer
     return underDico
 
 def dicoToFileJson(tabRecherche, nameFile):
     quizData = {}
-    urlFile = "Data/" + nameFile + ".js"
+    urlFile = "wiki-quiz/src/datas/" + nameFile + ".js"
     fichier = open(urlFile, "w")
-
     i = 0
     while i < len(tabRecherche):
-        quizData["Question-" + str(i)] = createUnderDico(recherche[i])
+        quizData["Question-" + str(i)] = createUnderDico(tabRecherche[i])
         i+=1
-    dicoQuiz = json.dumps(quizData, indent = 4)
-    ContentFile = "const quizData = " + dicoQuiz
+    ContentFile = "const quizData = " + json.dumps(quizData, indent = 4) + "\n" + "export default quizData"
     fichier.write(ContentFile)
     fichier.close()
 
-recherche = [
-    "Emmanuel Macron", 
-    "Emma Watson", 
-    "Samuel L. Jackson", 
-    "Cristiano Ronaldo", 
-    "Justin Bieber", 
-    "Ariana Grande",
-    "Selena Gomez"]
+def GenerateStarToFind():
+        url = "https://www.forbes.fr/classements/top-100-celebrites-mieux-payees/"
+        requete = requests.get(url)
+        page = requete.content
+        soup = BeautifulSoup(page, "html.parser" )
+        test1 = soup.find("table", class_="table table-responsive")
+        test2 = test1.find_all("tr")
+        i = 0
+        contentTest =[]
+        while i < len(test2):
+            content = test2[i].find_all("td")[1].p.text
+            contentTest.append(content)
+            i+=1
+        contentTest.pop(0)
+        return contentTest
+
     
-dicoToFileJson(recherche, "picture")
+dicoToFileJson(GenerateStarToFind(), "ElementOfTheQuiz")
