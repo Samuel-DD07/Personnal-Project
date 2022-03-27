@@ -19,8 +19,12 @@ def ScrappingPicture(nom):
         page = requete.content
         soup = BeautifulSoup(page, "html.parser" )
         try :
-            urlWiki = soup.find("a", class_="image").img["src"]
-            urlPicture = "https:" + urlWiki
+            imgPicture = soup.find("a", class_="image").img
+            if int(imgPicture["width"]) >= 200:
+                urlWiki = imgPicture["src"]
+                urlPicture = "https:" + urlWiki
+            else :
+                return None
             return nom, urlPicture
         except :
             return None
@@ -47,10 +51,12 @@ def dicoToFileJson(tabRecherche, nameFile):
     urlFile = "wiki-quiz/src/datas/" + nameFile + ".js"
     fichier = open(urlFile, "w")
     i = 0
+    m = 0
     while i < len(tabRecherche):
         element = createUnderDico(tabRecherche[i])
         if element != None :
-            quizData["Question-" + str(i)] = element
+            quizData["Question-" + str(m)] = element
+            m+=1
         i+=1
     ContentFile = "const quizData = " + json.dumps(quizData, indent = 4) + "\n" + "export default quizData"
     fichier.write(ContentFile)
