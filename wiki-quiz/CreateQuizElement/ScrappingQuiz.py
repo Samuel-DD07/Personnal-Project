@@ -3,12 +3,14 @@ from bs4 import BeautifulSoup
 import json
 import names
 
+
 # Create names to propose others answer for the playeur
 def GeneratorName(n):
     tabName = []
     for i in range(n):
         tabName.append(names.get_full_name())
     return tabName
+
 
 # Take the picture of the celebrity in Wikipédia Website
 def ScrappingPicture(nom):
@@ -22,6 +24,7 @@ def ScrappingPicture(nom):
             return nom, urlPicture
         except :
             return None
+
 
 # Take my Celebrity's search and return a dico with all of his information.
 def createUnderDico(Recherche):
@@ -37,6 +40,7 @@ def createUnderDico(Recherche):
     else :
         return None 
 
+
 # Take dico with all of Celebrity's informations and return a dico with all of dico for quiz.
 def dicoToFileJson(tabRecherche, nameFile):
     quizData = {}
@@ -51,6 +55,7 @@ def dicoToFileJson(tabRecherche, nameFile):
     ContentFile = "const quizData = " + json.dumps(quizData, indent = 4) + "\n" + "export default quizData"
     fichier.write(ContentFile)
     fichier.close()
+
 
 # Take the 100 famous celebrity's list and retrun a tab with his names.
 def GenerateStarToFind():

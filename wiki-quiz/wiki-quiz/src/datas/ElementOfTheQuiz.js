@@ -3,9 +3,9 @@ const quizData = {
         "GoodAnswer": "Sean Combs",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sean_Combs_2010.jpg/290px-Sean_Combs_2010.jpg",
         "AllAnswer": [
-            "Steven Mace",
-            "Cammie Clearwater",
-            "Bradford Abramson",
+            "James Mcraney",
+            "Jodi Minor",
+            "Charles Salazar",
             "Sean Combs"
         ]
     },
@@ -13,9 +13,9 @@ const quizData = {
         "GoodAnswer": "Beyonc\u00e9 Knowles",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Beyonc%C3%A9_at_The_Lion_King_European_Premiere_2019.png/220px-Beyonc%C3%A9_at_The_Lion_King_European_Premiere_2019.png",
         "AllAnswer": [
-            "Kristy Neher",
-            "Clifford Martin",
-            "Cynthia Townson",
+            "Frank Marshall",
+            "Bradley Nicholson",
+            "Joseph Oelschlaeger",
             "Beyonc\u00e9 Knowles"
         ]
     },
@@ -23,9 +23,9 @@ const quizData = {
         "GoodAnswer": "J.K Rowling",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J._K._Rowling_2010.jpg/220px-J._K._Rowling_2010.jpg",
         "AllAnswer": [
-            "Debbie Sturdivant",
-            "Harold Watson",
-            "Emmanuel Wuest",
+            "Francis Webber",
+            "Marta Penrod",
+            "Rosa Pratt",
             "J.K Rowling"
         ]
     },
@@ -33,9 +33,9 @@ const quizData = {
         "GoodAnswer": "Drake",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/20px-Flag_of_the_United_States.svg.png",
         "AllAnswer": [
-            "Bess Ehrhart",
-            "Rosanne Keys",
-            "Linda Self",
+            "Craig Henderson",
+            "Lynn Dyer",
+            "John Meidinger",
             "Drake"
         ]
     },
@@ -43,9 +43,9 @@ const quizData = {
         "GoodAnswer": "Cristiano Ronaldo",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Manchester_United_v_Newcastle_United%2C_11_September_2021_%2810%29.jpg/250px-Manchester_United_v_Newcastle_United%2C_11_September_2021_%2810%29.jpg",
         "AllAnswer": [
-            "Kurt Martinez",
-            "Ok Roberts",
-            "Anna Northern",
+            "Kevin Oconnell",
+            "Mellissa Butler",
+            "Marie Butcher",
             "Cristiano Ronaldo"
         ]
     },
@@ -53,9 +53,9 @@ const quizData = {
         "GoodAnswer": "The Weeknd",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/FEQ_July_2018_The_Weeknd_%2844778856382%29_%28cropped%29.jpg/220px-FEQ_July_2018_The_Weeknd_%2844778856382%29_%28cropped%29.jpg",
         "AllAnswer": [
-            "Leslie Phillips",
-            "Maria Cardozo",
-            "Yu Powell",
+            "Lisa Mccoy",
+            "Robert Cole",
+            "Marty Leonard",
             "The Weeknd"
         ]
     },
@@ -63,9 +63,9 @@ const quizData = {
         "GoodAnswer": "Howard Stern",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Howard_Stern.jpg/260px-Howard_Stern.jpg",
         "AllAnswer": [
-            "Margaret Thompson",
-            "Van Thompson",
-            "Dorian Lovaglio",
+            "Ryan Stafford",
+            "Brock Green",
+            "Maryann Ford",
             "Howard Stern"
         ]
     },
@@ -73,9 +73,9 @@ const quizData = {
         "GoodAnswer": "Coldplay",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Coldplay_-_Global-Citizen-Festival_Hamburg_14.jpg/290px-Coldplay_-_Global-Citizen-Festival_Hamburg_14.jpg",
         "AllAnswer": [
-            "Mary Mckenzie",
-            "Michael Daniel",
-            "Gilbert Smith",
+            "Roy Jackson",
+            "Earl Haight",
+            "Charles Oge",
             "Coldplay"
         ]
     },
@@ -83,9 +83,9 @@ const quizData = {
         "GoodAnswer": "James Patterson",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/James_Patterson.jpg/220px-James_Patterson.jpg",
         "AllAnswer": [
-            "Marjorie Smith",
-            "Elizabeth Thomson",
-            "Versie Zeigler",
+            "John Phillips",
+            "James Rickman",
+            "Douglas Henry",
             "James Patterson"
         ]
     },
@@ -93,9 +93,9 @@ const quizData = {
         "GoodAnswer": "LeBron James",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/LeBron_James_-_51959723161.jpg/280px-LeBron_James_-_51959723161.jpg",
         "AllAnswer": [
-            "Lorene Weed",
-            "George Brinton",
-            "John Clark",
+            "Denis Thibadeau",
+            "Colleen Gayne",
+            "Irwin Lawson",
             "LeBron James"
         ]
     },
@@ -103,9 +103,9 @@ const quizData = {
         "GoodAnswer": "Guns N\u2019 Roses",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/2017-fr.wp-orange-source.svg/45px-2017-fr.wp-orange-source.svg.png",
         "AllAnswer": [
-            "Gwendolyn Livingston",
-            "Gerald Timko",
-            "Kenneth Alm",
+            "Mary Smith",
+            "Edward Lopez",
+            "Bonnie Hinton",
             "Guns N\u2019 Roses"
         ]
     },
@@ -113,9 +113,9 @@ const quizData = {
         "GoodAnswer": "Rush Limbaugh",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Translation_arrow.svg/45px-Translation_arrow.svg.png",
         "AllAnswer": [
-            "Thomas Collins",
-            "Hattie Hill",
-            "Cheryl Pecora",
+            "Tom Bauer",
+            "Lydia Ward",
+            "Miles Gray",
             "Rush Limbaugh"
         ]
     },
@@ -123,9 +123,9 @@ const quizData = {
         "GoodAnswer": "Justin Bieber",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Justin_Bieber_in_2015.jpg/220px-Justin_Bieber_in_2015.jpg",
         "AllAnswer": [
-            "Alica Patton",
-            "Beatrice Akers",
-            "Paul Nelson",
+            "William Lomas",
+            "Allen Brewer",
+            "Marsha Mollette",
             "Justin Bieber"
         ]
     },
@@ -133,9 +133,9 @@ const quizData = {
         "GoodAnswer": "Lionel Messi",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lionel_Messi_PSG.jpg/250px-Lionel_Messi_PSG.jpg",
         "AllAnswer": [
-            "Cecile Waters",
-            "Betty Kim",
-            "Heather Fendler",
+            "Christopher Johnson",
+            "Rosa Choi",
+            "Shannon Hobbs",
             "Lionel Messi"
         ]
     },
@@ -143,9 +143,9 @@ const quizData = {
         "GoodAnswer": "Bruce Springsteen",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bruce_Springsteen_-_Roskilde_Festival_2012.jpg/220px-Bruce_Springsteen_-_Roskilde_Festival_2012.jpg",
         "AllAnswer": [
-            "April Eddington",
-            "Helene Whitley",
-            "Renee Takata",
+            "Patrick Garcia",
+            "Barbara Jackson",
+            "Mark Filthaut",
             "Bruce Springsteen"
         ]
     },
@@ -153,9 +153,9 @@ const quizData = {
         "GoodAnswer": "Adele",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Adele_for_Vogue_in_2021.png/220px-Adele_for_Vogue_in_2021.png",
         "AllAnswer": [
-            "Jerry Fidler",
-            "Elena Jacobs",
-            "James Grill",
+            "Alex Feauto",
+            "Gabriel Mahraun",
+            "Frances Salvador",
             "Adele"
         ]
     },
@@ -163,9 +163,9 @@ const quizData = {
         "GoodAnswer": "Jerry Seinfeld",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Jerry_Seinfeld_2016_-_2.jpg/260px-Jerry_Seinfeld_2016_-_2.jpg",
         "AllAnswer": [
-            "Patricia Maxie",
-            "Ronald Manchester",
-            "Wallace Mcnulty",
+            "Amy Zabinski",
+            "Anthony Winters",
+            "Kelly Mcnolty",
             "Jerry Seinfeld"
         ]
     },
@@ -173,9 +173,9 @@ const quizData = {
         "GoodAnswer": "Mark Wahlberg",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Mark_Wahlberg_2021.jpg/220px-Mark_Wahlberg_2021.jpg",
         "AllAnswer": [
-            "Beverly Munselle",
-            "Stephen Craver",
-            "Daniel Smith",
+            "Bennie Alsdon",
+            "Gwendolyn Williams",
+            "Richard Mccollom",
             "Mark Wahlberg"
         ]
     },
@@ -183,9 +183,9 @@ const quizData = {
         "GoodAnswer": "Metallica",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Metallica_at_The_O2_Arena_London_2008.jpg/260px-Metallica_at_The_O2_Arena_London_2008.jpg",
         "AllAnswer": [
-            "Kay Wheeler",
-            "Lois Duenes",
-            "Esther Turner",
+            "Joseph Gray",
+            "Joseph Janski",
+            "William Dossantos",
             "Metallica"
         ]
     },
@@ -193,9 +193,9 @@ const quizData = {
         "GoodAnswer": "Dwayne Johnson",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/220px-Dwayne_Johnson_2014_%28cropped%29.jpg",
         "AllAnswer": [
-            "Charles Locy",
-            "Eugene Melendez",
-            "Helen Fillinger",
+            "Allie Crouchet",
+            "Ollie Dyches",
+            "George Brunner",
             "Dwayne Johnson"
         ]
     },
@@ -203,9 +203,9 @@ const quizData = {
         "GoodAnswer": "Roger Federer",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Australian_Open_2020_%2849836759073%29.jpg/280px-Australian_Open_2020_%2849836759073%29.jpg",
         "AllAnswer": [
-            "Esperanza Claus",
-            "Victor Brinkley",
-            "Meghan Ray",
+            "Cecilia Rosado",
+            "Barbara Workman",
+            "Jacqueline Tainter",
             "Roger Federer"
         ]
     },
@@ -213,9 +213,9 @@ const quizData = {
         "GoodAnswer": "David Copperfield",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Copperfield_cover_serial.jpg/250px-Copperfield_cover_serial.jpg",
         "AllAnswer": [
-            "Maria Gorecki",
-            "Tara Bohannon",
-            "Fred Monroy",
+            "Caroline Clyburn",
+            "Gary Williams",
+            "Helen Wilcox",
             "David Copperfield"
         ]
     },
@@ -223,9 +223,9 @@ const quizData = {
         "GoodAnswer": "Kevin Durant",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Kevin_Durant_%28Wizards_v._Warriors%2C_1-24-2019%29_%28cropped%29.jpg/270px-Kevin_Durant_%28Wizards_v._Warriors%2C_1-24-2019%29_%28cropped%29.jpg",
         "AllAnswer": [
-            "Melanie Lo",
-            "Frank Sharp",
-            "Bessie Howie",
+            "Brittany Boswell",
+            "James Lynch",
+            "Roger Montgomery",
             "Kevin Durant"
         ]
     },
@@ -233,9 +233,9 @@ const quizData = {
         "GoodAnswer": "Garth Brooks",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Garth_Brooks_2019_By_Glenn_Francis.jpg/220px-Garth_Brooks_2019_By_Glenn_Francis.jpg",
         "AllAnswer": [
-            "Sandra Slama",
-            "Kathy Tucci",
-            "Matilde Brown",
+            "Sarah Heath",
+            "Robert Hollyday",
+            "Cory Batters",
             "Garth Brooks"
         ]
     },
@@ -243,9 +243,9 @@ const quizData = {
         "GoodAnswer": "Elton John",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Elton_John_Cannes_2019.jpg/260px-Elton_John_Cannes_2019.jpg",
         "AllAnswer": [
-            "John Valdez",
-            "Frank Pazmino",
-            "Bruce Brown",
+            "Patricia Darbonne",
+            "Janice Jones",
+            "Vincent Wiley",
             "Elton John"
         ]
     },
@@ -253,9 +253,9 @@ const quizData = {
         "GoodAnswer": "Gordon Ramsay",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Gordon_Ramsay.jpg/220px-Gordon_Ramsay.jpg",
         "AllAnswer": [
-            "Gladys Elliott",
-            "Blanche Hedges",
-            "Donald Finley",
+            "Helen Velasquez",
+            "Rose Sheridan",
+            "Charles Katz",
             "Gordon Ramsay"
         ]
     },
@@ -263,9 +263,9 @@ const quizData = {
         "GoodAnswer": "Ryan Seacrest",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/U.S._flag_on_television.svg/45px-U.S._flag_on_television.svg.png",
         "AllAnswer": [
-            "Kate Shea",
-            "Tara Overstreet",
-            "Clinton Baldon",
+            "Marquita Hudson",
+            "Ruby Vereb",
+            "Ruby Evans",
             "Ryan Seacrest"
         ]
     },
@@ -273,9 +273,9 @@ const quizData = {
         "GoodAnswer": "Chris Rock",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chris_Rock_WE_2012_Shankbone.JPG/260px-Chris_Rock_WE_2012_Shankbone.JPG",
         "AllAnswer": [
-            "Sharron Norfleet",
-            "Ira Sansom",
-            "Claudia Driver",
+            "Cynthia Little",
+            "Nancy Walker",
+            "Carol Bartley",
             "Chris Rock"
         ]
     },
@@ -283,9 +283,9 @@ const quizData = {
         "GoodAnswer": "Vin Diesel",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Vin_Diesel_XXX_Return_of_Xander_Cage_premiere.png/220px-Vin_Diesel_XXX_Return_of_Xander_Cage_premiere.png",
         "AllAnswer": [
-            "Richard Carr",
-            "Curtis Jones",
-            "Lloyd Craddock",
+            "Erik Ostrzyeki",
+            "Darin Pontious",
+            "Joshua Grau",
             "Vin Diesel"
         ]
     },
@@ -293,9 +293,9 @@ const quizData = {
         "GoodAnswer": "Paul McCartney",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Paul_McCartney_in_October_2018.jpg/220px-Paul_McCartney_in_October_2018.jpg",
         "AllAnswer": [
-            "Georgia Wildman",
-            "Lori Baxter",
-            "Randall Cavanaugh",
+            "Ronald Brown",
+            "David Overbey",
+            "Danielle Walter",
             "Paul McCartney"
         ]
     },
@@ -303,9 +303,9 @@ const quizData = {
         "GoodAnswer": "Red Hot Chili Peppers",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Rhcp-live-pinkpop05.jpg/260px-Rhcp-live-pinkpop05.jpg",
         "AllAnswer": [
-            "Doris Haycraft",
-            "Sergio Proudfoot",
-            "Linda Leeper",
+            "Kendra Barnes",
+            "Kay Dettman",
+            "Latoya Huffman",
             "Red Hot Chili Peppers"
         ]
     },
@@ -313,9 +313,9 @@ const quizData = {
         "GoodAnswer": "Jimmy Buffett",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/25px-Circle-icons-profile.svg.png",
         "AllAnswer": [
-            "Susan Wren",
-            "Beatrice Bartolome",
-            "Jocelyn Bohannon",
+            "Lisa Peachey",
+            "Diane Burton",
+            "Kristine Hatley",
             "Jimmy Buffett"
         ]
     },
@@ -323,9 +323,9 @@ const quizData = {
         "GoodAnswer": "Adam Sandler",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Adam_Sandler_2018_%28Lc9jYc07e54%29.jpg/220px-Adam_Sandler_2018_%28Lc9jYc07e54%29.jpg",
         "AllAnswer": [
-            "Lizzie Lee",
-            "Lindsey Massengale",
-            "Jacqueline Malley",
+            "George Ayala",
+            "Rita Hines",
+            "Delores Mccarty",
             "Adam Sandler"
         ]
     },
@@ -333,9 +333,9 @@ const quizData = {
         "GoodAnswer": "Andrew Luck",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Andrew_Luck_vs._Redskins_2018.jpg/220px-Andrew_Luck_vs._Redskins_2018.jpg",
         "AllAnswer": [
-            "Horace Malcom",
-            "Richard Miguel",
-            "Alfred Koester",
+            "Jean Mitchell",
+            "Todd Nieves",
+            "Christopher Lopez",
             "Andrew Luck"
         ]
     },
@@ -343,9 +343,9 @@ const quizData = {
         "GoodAnswer": "Rory McIlroy",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Golf_pictogram.svg/40px-Golf_pictogram.svg.png",
         "AllAnswer": [
-            "James Baker",
-            "Diane Long",
-            "Adam Hanson",
+            "Priscilla Anderson",
+            "Lula Sullivan",
+            "James Kachermeyer",
             "Rory McIlroy"
         ]
     },
@@ -353,9 +353,9 @@ const quizData = {
         "GoodAnswer": "Jackie Chan",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Jackie_Chan_Cannes_2012.jpg/220px-Jackie_Chan_Cannes_2012.jpg",
         "AllAnswer": [
-            "Jonathan Goldsmith",
-            "Mary Jones",
-            "Jennifer Havard",
+            "Robin Booker",
+            "David Mcbride",
+            "Barry Mckinnie",
             "Jackie Chan"
         ]
     },
@@ -363,9 +363,9 @@ const quizData = {
         "GoodAnswer": "Robert Downey Jr.",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Robert_Downey%2C_Jr._SDCC_2014_%28cropped%29.jpg/220px-Robert_Downey%2C_Jr._SDCC_2014_%28cropped%29.jpg",
         "AllAnswer": [
-            "Lessie Holloway",
-            "Irene Hesser",
-            "Gregory Kennan",
+            "Jennifer Goode",
+            "Jeanne Romo",
+            "Karen Smith",
             "Robert Downey Jr."
         ]
     },
@@ -373,9 +373,9 @@ const quizData = {
         "GoodAnswer": "Stephen Curry",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Stephen_Curry_Shooting_%28cropped%29.jpg/280px-Stephen_Curry_Shooting_%28cropped%29.jpg",
         "AllAnswer": [
-            "Shirley Brown",
-            "Arthur Brackman",
-            "Raul Glover",
+            "Amy Belton",
+            "Walter Hinkle",
+            "Steven Ortiz",
             "Stephen Curry"
         ]
     },
@@ -383,9 +383,9 @@ const quizData = {
         "GoodAnswer": "Dave Chappelle",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Dave_Chappelle_%2842791297960%29_%28cropped%29.jpg/220px-Dave_Chappelle_%2842791297960%29_%28cropped%29.jpg",
         "AllAnswer": [
-            "Tom Mcintosh",
-            "Connie Castano",
-            "Michelle Potter",
+            "David Lewis",
+            "Bert Evans",
+            "Paulette Shetler",
             "Dave Chappelle"
         ]
     },
@@ -393,9 +393,9 @@ const quizData = {
         "GoodAnswer": "Judy Sheindlin",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/35px-Circle-icons-profile.svg.png",
         "AllAnswer": [
-            "Nathaniel Carter",
-            "Louis Emmons",
-            "Steve Smith",
+            "Mary Burley",
+            "Joe Tippets",
+            "Alpha Nguyen",
             "Judy Sheindlin"
         ]
     },
@@ -403,9 +403,9 @@ const quizData = {
         "GoodAnswer": "James Harden",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/JamesHardenWSH.jpg/210px-JamesHardenWSH.jpg",
         "AllAnswer": [
-            "Lakeisha Lenters",
-            "Clifford Henderson",
-            "Larry Johnston",
+            "Roger Markee",
+            "Angelo Panchik",
+            "Philip Cooper",
             "James Harden"
         ]
     },
@@ -413,9 +413,9 @@ const quizData = {
         "GoodAnswer": "Lewis Hamilton",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Lewis_Hamilton_2016_Malaysia_2.jpg/220px-Lewis_Hamilton_2016_Malaysia_2.jpg",
         "AllAnswer": [
-            "Jeremy Dawson",
-            "Marcus Rundle",
-            "Richard Anderson",
+            "Mary Mccomas",
+            "Latoya Honaker",
+            "Catherin Haile",
             "Lewis Hamilton"
         ]
     },
@@ -423,9 +423,9 @@ const quizData = {
         "GoodAnswer": "Kim Kardashian West",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kim_Kardashian_2019.jpg/260px-Kim_Kardashian_2019.jpg",
         "AllAnswer": [
-            "Judith Miller",
-            "Martha Nifong",
-            "Doris Martinez",
+            "Steven Brothers",
+            "Carol Faison",
+            "Cynthia Stalnaker",
             "Kim Kardashian West"
         ]
     },
@@ -433,9 +433,9 @@ const quizData = {
         "GoodAnswer": "Drew Brees",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Drew_Brees_%2849396271982%29_%281%29.jpg/220px-Drew_Brees_%2849396271982%29_%281%29.jpg",
         "AllAnswer": [
-            "Jordan Wentworth",
-            "Jackie Fernandez",
-            "Lynette Hicks",
+            "Ian Holland",
+            "Lois Holst",
+            "Deborah Hulsizer",
             "Drew Brees"
         ]
     },
@@ -443,9 +443,9 @@ const quizData = {
         "GoodAnswer": "Taylor Swift",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Taylor_Swift_NYC_Cats_Premiere_2019.png/260px-Taylor_Swift_NYC_Cats_Premiere_2019.png",
         "AllAnswer": [
-            "Willie Hunter",
-            "Bette Scharf",
-            "Gloria Williams",
+            "Walter Ogden",
+            "Gary Neal",
+            "Johnna Moore",
             "Taylor Swift"
         ]
     },
@@ -453,9 +453,9 @@ const quizData = {
         "GoodAnswer": "Phil Mickelson",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Golf_pictogram.svg/40px-Golf_pictogram.svg.png",
         "AllAnswer": [
-            "Dennis Garcia",
-            "Herman Dixon",
-            "Mary Barge",
+            "William Vasquez",
+            "Tristan Vanes",
+            "Randall Thomson",
             "Phil Mickelson"
         ]
     },
@@ -463,9 +463,9 @@ const quizData = {
         "GoodAnswer": "Simon Cowell",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/2017-fr.wp-orange-source.svg/45px-2017-fr.wp-orange-source.svg.png",
         "AllAnswer": [
-            "Bernard Carpenter",
-            "Susan Walters",
-            "Lisa Markovich",
+            "Graig Leonard",
+            "Robert Morgan",
+            "Elaine Fitzgerald",
             "Simon Cowell"
         ]
     },
@@ -473,9 +473,9 @@ const quizData = {
         "GoodAnswer": "Tom Cruise",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Tom_Cruise_by_Gage_Skidmore_2.jpg/220px-Tom_Cruise_by_Gage_Skidmore_2.jpg",
         "AllAnswer": [
-            "Gwendolyn Strauss",
-            "Larry Bueckers",
-            "Emmitt Davis",
+            "Kathleen Allbright",
+            "Kitty Diggs",
+            "Ava Pack",
             "Tom Cruise"
         ]
     },
@@ -483,9 +483,9 @@ const quizData = {
         "GoodAnswer": "Kenny Chesney",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/KChesney.jpg/220px-KChesney.jpg",
         "AllAnswer": [
-            "Nellie Thompson",
-            "Charles Brown",
-            "David Streetman",
+            "Cecil Lancaster",
+            "Luz Rojas",
+            "Ervin Behring",
             "Kenny Chesney"
         ]
     },
@@ -493,9 +493,9 @@ const quizData = {
         "GoodAnswer": "Steve Harvey",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/SteveHarveyHWOFMay2013_%28cropped%29.jpg/220px-SteveHarveyHWOFMay2013_%28cropped%29.jpg",
         "AllAnswer": [
-            "Solomon Bocanegra",
-            "Scott Scott",
-            "Cynthia Newby",
+            "Janet Dudley",
+            "Corrie Moore",
+            "Howard Netterville",
             "Steve Harvey"
         ]
     },
@@ -503,9 +503,9 @@ const quizData = {
         "GoodAnswer": "Luke Bryan",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/LukeBryanApr10.jpg/220px-LukeBryanApr10.jpg",
         "AllAnswer": [
-            "Jean Ayers",
-            "Palmer Mirabal",
-            "Gary Brown",
+            "Eugene Morgan",
+            "John Johnson",
+            "Roger Coffey",
             "Luke Bryan"
         ]
     },
@@ -513,9 +513,9 @@ const quizData = {
         "GoodAnswer": "C\u00e9line Dion",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/C%C3%A9line_Dion_2012.jpg/220px-C%C3%A9line_Dion_2012.jpg",
         "AllAnswer": [
-            "Karen Dunn",
-            "Mattie Jensen",
-            "Wendell Richeson",
+            "Mirta Smith",
+            "Etta Beard",
+            "David Miller",
             "C\u00e9line Dion"
         ]
     },
@@ -523,9 +523,9 @@ const quizData = {
         "GoodAnswer": "Jay Z",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Jay-Z_2%2C_2011.jpg/290px-Jay-Z_2%2C_2011.jpg",
         "AllAnswer": [
-            "Terry Vernon",
-            "Mattie Baker",
-            "Leon Schmidt",
+            "Josephine Palmer",
+            "Mario Roy",
+            "Betty Jackson",
             "Jay Z"
         ]
     },
@@ -533,9 +533,9 @@ const quizData = {
         "GoodAnswer": "Sof\u00eda Vergara",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sof%C3%ADa_Vergara_2019_by_Glenn_Francis.jpg/250px-Sof%C3%ADa_Vergara_2019_by_Glenn_Francis.jpg",
         "AllAnswer": [
-            "Spencer Teague",
-            "Mark Christopher",
-            "Daniel Hunter",
+            "Patrick Sayler",
+            "Holly Rossi",
+            "David Palacio",
             "Sof\u00eda Vergara"
         ]
     },
@@ -543,9 +543,9 @@ const quizData = {
         "GoodAnswer": "Kylie Jenner",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Kylie_Jenner_in_2021.jpg/260px-Kylie_Jenner_in_2021.jpg",
         "AllAnswer": [
-            "Ernestine Villalobos",
-            "Will Haro",
-            "Chris Jackson",
+            "Lula Florence",
+            "Elizabeth Carpenter",
+            "Cynthia Deltoro",
             "Kylie Jenner"
         ]
     },
@@ -553,9 +553,9 @@ const quizData = {
         "GoodAnswer": "Bruno Mars",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Bruno_Mars_-_24K_Magic_Tour_2017.jpg/220px-Bruno_Mars_-_24K_Magic_Tour_2017.jpg",
         "AllAnswer": [
-            "Ruby Finley",
-            "Roger George",
-            "Randy Dixon",
+            "Curtis Gooden",
+            "Mary Chech",
+            "Chad Russell",
             "Bruno Mars"
         ]
     },
@@ -563,9 +563,9 @@ const quizData = {
         "GoodAnswer": "Ti\u00ebsto",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Ti%C3%ABsto_%40_Airbeat_One_2017.jpg/260px-Ti%C3%ABsto_%40_Airbeat_One_2017.jpg",
         "AllAnswer": [
-            "Debra Robinson",
-            "Dwight Merrick",
-            "Stanley Blair",
+            "Henry Schultz",
+            "Mildred Turpin",
+            "Ralph Kirtner",
             "Ti\u00ebsto"
         ]
     },
@@ -573,9 +573,9 @@ const quizData = {
         "GoodAnswer": "Sebastian Vettel",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/2019_Formula_One_tests_Barcelona%2C_Vettel_%2847200008782%29.jpg/220px-2019_Formula_One_tests_Barcelona%2C_Vettel_%2847200008782%29.jpg",
         "AllAnswer": [
-            "Darin Rodriguez",
-            "John Hallman",
-            "Bryan Darrough",
+            "Nicole Kenney",
+            "Louis Meadows",
+            "Kendra Brown",
             "Sebastian Vettel"
         ]
     },
@@ -583,9 +583,9 @@ const quizData = {
         "GoodAnswer": "Damian Lillard",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Damian_Lillard_in_2018.jpg/280px-Damian_Lillard_in_2018.jpg",
         "AllAnswer": [
-            "Charles Wright",
-            "Clyde Davenport",
-            "Pauline White",
+            "Lisa Hughes",
+            "Nila Alfano",
+            "Vernon Huntley",
             "Damian Lillard"
         ]
     },
@@ -593,9 +593,9 @@ const quizData = {
         "GoodAnswer": "Shah Rukh Khan",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Shahrukh_Khan_CE.jpg/220px-Shahrukh_Khan_CE.jpg",
         "AllAnswer": [
-            "Joshua Bosserman",
-            "Joel Litchfield",
-            "Lisa Federico",
+            "Robert Evans",
+            "Robert Ferguson",
+            "Patricia Weber",
             "Shah Rukh Khan"
         ]
     },
@@ -603,9 +603,9 @@ const quizData = {
         "GoodAnswer": "Jennifer Lopez",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/210120-D-WD757-1975_%2850860511978%29_%28cropped%29.jpg/220px-210120-D-WD757-1975_%2850860511978%29_%28cropped%29.jpg",
         "AllAnswer": [
-            "Patrick Davis",
-            "Emerita Gossett",
-            "Ralph Davis",
+            "Bryan Vaughn",
+            "Steven King",
+            "Don Jones",
             "Jennifer Lopez"
         ]
     },
@@ -613,9 +613,9 @@ const quizData = {
         "GoodAnswer": "The Chainsmokers",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/The_chainsmokers_veld_2016_cropped.jpg/440px-The_chainsmokers_veld_2016_cropped.jpg",
         "AllAnswer": [
-            "Martha Govea",
-            "Maureen Ryant",
-            "Amy Wooten",
+            "Amanda Elhard",
+            "Adam Armijo",
+            "Annie Mattingly",
             "The Chainsmokers"
         ]
     },
@@ -623,9 +623,9 @@ const quizData = {
         "GoodAnswer": "Novak Djokovic",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Novak_Djokovic_Queen%27s_Club_2018.jpg/280px-Novak_Djokovic_Queen%27s_Club_2018.jpg",
         "AllAnswer": [
-            "Brenda Tse",
-            "Felipe Medina",
-            "Robert Parsons",
+            "Marie Williams",
+            "Nancy Bronson",
+            "Cesar Zediker",
             "Novak Djokovic"
         ]
     },
@@ -633,9 +633,9 @@ const quizData = {
         "GoodAnswer": "Amy Schumer",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Amy_Schumer_by_Mario_Santor.jpg/220px-Amy_Schumer_by_Mario_Santor.jpg",
         "AllAnswer": [
-            "Edward Espy",
-            "James Kane",
-            "Emily Laws",
+            "Paul Groover",
+            "Michael Pedone",
+            "Shawna Hallenbeck",
             "Amy Schumer"
         ]
     },
@@ -643,9 +643,9 @@ const quizData = {
         "GoodAnswer": "Tiger Woods",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Golf_pictogram.svg/40px-Golf_pictogram.svg.png",
         "AllAnswer": [
-            "Alma Callahan",
-            "Ricky Miller",
-            "Arlene Santos",
+            "Charles Jameson",
+            "Margaret Denman",
+            "Louella Choat",
             "Tiger Woods"
         ]
     },
@@ -653,9 +653,9 @@ const quizData = {
         "GoodAnswer": "Neymar",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Neymar_850_1705.jpg/250px-20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Neymar_850_1705.jpg",
         "AllAnswer": [
-            "Marylou Smelser",
-            "Brenda Orr",
-            "Sylvia Richards",
+            "Daniel Gonzales",
+            "Randolph Steinberg",
+            "Nathaniel Mceachern",
             "Neymar"
         ]
     },
@@ -663,9 +663,9 @@ const quizData = {
         "GoodAnswer": "Bill O\u2019Reilly",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Bill_O%27Reilly_at_the_World_Affairs_Council_of_Philadelphia_%28cropped%29.jpg/260px-Bill_O%27Reilly_at_the_World_Affairs_Council_of_Philadelphia_%28cropped%29.jpg",
         "AllAnswer": [
-            "Karen Bolton",
-            "Thomas Guerin",
-            "Marisol Willadsen",
+            "John Mulac",
+            "Lynn Sullivan",
+            "James Wilder",
             "Bill O\u2019Reilly"
         ]
     },
@@ -673,9 +673,9 @@ const quizData = {
         "GoodAnswer": "Dolly Parton",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dolly_parton_grand_ole_opry_crop.jpg/220px-Dolly_parton_grand_ole_opry_crop.jpg",
         "AllAnswer": [
-            "Emma Beaushaw",
-            "Jack Simons",
-            "Lena Mcbee",
+            "Philomena Wood",
+            "Marie Rowe",
+            "John Brown",
             "Dolly Parton"
         ]
     },
@@ -683,9 +683,9 @@ const quizData = {
         "GoodAnswer": "Ed Sheeran",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ed_Sheeran-6826_%28cropped%29.jpg/220px-Ed_Sheeran-6826_%28cropped%29.jpg",
         "AllAnswer": [
-            "Alexander Maggard",
-            "Michelle Smith",
-            "Wayne Lawrence",
+            "Dorothy Devine",
+            "Daniel Bragg",
+            "Harold Wren",
             "Ed Sheeran"
         ]
     },
@@ -693,9 +693,9 @@ const quizData = {
         "GoodAnswer": "Dwayne Wade",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Dwyane_Wade_e1.jpg/250px-Dwyane_Wade_e1.jpg",
         "AllAnswer": [
-            "Arthur Pokswinski",
-            "Daniel Brucker",
-            "Ronald Osborne",
+            "Brenda Juarbe",
+            "Shawn Hamilton",
+            "Felipe Valerio",
             "Dwayne Wade"
         ]
     },
@@ -703,9 +703,9 @@ const quizData = {
         "GoodAnswer": "Fernando Alonso",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Alonso_2016.jpg/220px-Alonso_2016.jpg",
         "AllAnswer": [
-            "Elizabeth Carr",
-            "Michael Sanchez",
-            "Carole Finn",
+            "Camellia Russell",
+            "Blake Dixon",
+            "Harry Lewis",
             "Fernando Alonso"
         ]
     },
@@ -713,9 +713,9 @@ const quizData = {
         "GoodAnswer": "Sean Hannity",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Sean_Hannity_by_Gage_Skidmore.jpg/260px-Sean_Hannity_by_Gage_Skidmore.jpg",
         "AllAnswer": [
-            "George Smith",
-            "Clifford Doyle",
-            "Marcia Mcnair",
+            "Kenneth Bunch",
+            "William Pridgen",
+            "Constance Rogers",
             "Sean Hannity"
         ]
     },
@@ -723,9 +723,9 @@ const quizData = {
         "GoodAnswer": "Rihanna",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Rihanna_Fenty_2018.png/220px-Rihanna_Fenty_2018.png",
         "AllAnswer": [
-            "Adam Gruber",
-            "Lydia Vivian",
-            "Kim Weber",
+            "Jill Skinner",
+            "Jamie Salgado",
+            "Carlos Lewis",
             "Rihanna"
         ]
     },
@@ -733,9 +733,9 @@ const quizData = {
         "GoodAnswer": "Bon Jovi",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Bon_Jovi_1.jpg/260px-Bon_Jovi_1.jpg",
         "AllAnswer": [
-            "Richard Esposito",
-            "Henry Welsh",
-            "Kylie Potts",
+            "Julie Servais",
+            "Brandon Mckenzie",
+            "Josephine Persad",
             "Bon Jovi"
         ]
     },
@@ -743,9 +743,9 @@ const quizData = {
         "GoodAnswer": "Akshay Kumar",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/35px-Circle-icons-profile.svg.png",
         "AllAnswer": [
-            "Erwin Sexton",
-            "Valerie Davis",
-            "Timothy Pierce",
+            "Gail Wilder",
+            "Jill Kauffman",
+            "Caroline Yarbrough",
             "Akshay Kumar"
         ]
     },
@@ -753,9 +753,9 @@ const quizData = {
         "GoodAnswer": "Billy Joel",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Billy_Joel_Shankbone_NYC_2009.jpg/260px-Billy_Joel_Shankbone_NYC_2009.jpg",
         "AllAnswer": [
-            "Jason Woodrum",
-            "Elsie Sawyer",
-            "Aaron Martin",
+            "Janice Levy",
+            "Bruce Mejorado",
+            "Johnny Siggers",
             "Billy Joel"
         ]
     },
@@ -763,9 +763,9 @@ const quizData = {
         "GoodAnswer": "Dr. Dre",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/d/de/Dr._Dre_in_2011.jpg",
         "AllAnswer": [
-            "Todd Balch",
-            "Elizabeth Day",
-            "Peter Glen",
+            "Steve Cable",
+            "Jerry Kellerman",
+            "Sheryl Bautista",
             "Dr. Dre"
         ]
     },
@@ -773,9 +773,9 @@ const quizData = {
         "GoodAnswer": "Florida Georgia Line",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flagaline.jpg/220px-Flagaline.jpg",
         "AllAnswer": [
-            "Roy King",
-            "Irene Winebarger",
-            "Juan Milburn",
+            "James Suarez",
+            "Verlene Ward",
+            "Constance Mccann",
             "Florida Georgia Line"
         ]
     },
@@ -783,9 +783,9 @@ const quizData = {
         "GoodAnswer": "Toby Keith",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/RockNRollGuitarist.svg/19px-RockNRollGuitarist.svg.png",
         "AllAnswer": [
-            "Christopher Lane",
-            "Melissa Shaffer",
-            "Tanya Mcfarland",
+            "John Cardella",
+            "Karla Jaramillo",
+            "Brianna Barron",
             "Toby Keith"
         ]
     },
@@ -793,9 +793,9 @@ const quizData = {
         "GoodAnswer": "Jordan Spieth",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Golf_pictogram.svg/40px-Golf_pictogram.svg.png",
         "AllAnswer": [
-            "Samuel Levinson",
-            "Patricia Lin",
-            "William Bannon",
+            "Stephanie Pritchard",
+            "Monica Mcgrew",
+            "Mary Gamble",
             "Jordan Spieth"
         ]
     },
@@ -803,9 +803,9 @@ const quizData = {
         "GoodAnswer": "Derrick Rose",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Rose-20190120_%28cropped%29.jpg/220px-Rose-20190120_%28cropped%29.jpg",
         "AllAnswer": [
-            "Jermaine Truax",
-            "Carolyn Cofield",
-            "Edward Burklow",
+            "Diana Fassino",
+            "Diane Byrne",
+            "Minnie Jones",
             "Derrick Rose"
         ]
     },
@@ -813,9 +813,9 @@ const quizData = {
         "GoodAnswer": "Usain Bolt",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Usain_Bolt_Rio_100m_final_2016i-cr.jpg/200px-Usain_Bolt_Rio_100m_final_2016i-cr.jpg",
         "AllAnswer": [
-            "Roy Gardiner",
-            "Yvonne Sebastian",
-            "Mae Frenz",
+            "Kevin Stanley",
+            "Brenda Gildersleeve",
+            "Linda Lancaster",
             "Usain Bolt"
         ]
     },
@@ -823,9 +823,9 @@ const quizData = {
         "GoodAnswer": "Gareth Bale",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Liver-RM_%282%29_%28cropped%29.jpg/280px-Liver-RM_%282%29_%28cropped%29.jpg",
         "AllAnswer": [
-            "Kenneth Orozco",
-            "Jacqueline Allison",
-            "Joseph Carr",
+            "Robert Riley",
+            "Michelle Meadows",
+            "Robert Marrara",
             "Gareth Bale"
         ]
     },
@@ -833,9 +833,9 @@ const quizData = {
         "GoodAnswer": "Conor McGregor",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Conor_McGregor_2018.jpg/250px-Conor_McGregor_2018.jpg",
         "AllAnswer": [
-            "Patrick Butler",
-            "Judith Anderson",
-            "Derrick Jones",
+            "Dorothy Blasen",
+            "Dion Jansons",
+            "Andrew Sieberg",
             "Conor McGregor"
         ]
     },
@@ -843,9 +843,9 @@ const quizData = {
         "GoodAnswer": "Britney Spears",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Britney_Spears_2013_%28Straighten_Crop%29.jpg/220px-Britney_Spears_2013_%28Straighten_Crop%29.jpg",
         "AllAnswer": [
-            "Susan Sutton",
-            "Frances Champagne",
-            "Myrtle Lopez",
+            "Janice Aymond",
+            "Dennis Miller",
+            "Peggy Powell",
             "Britney Spears"
         ]
     },
@@ -853,9 +853,9 @@ const quizData = {
         "GoodAnswer": "Kei Nishikori",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Nishikori_US16_%2853%29_%2829235626754%29.jpg/250px-Nishikori_US16_%2853%29_%2829235626754%29.jpg",
         "AllAnswer": [
-            "Susan Lupkes",
-            "Kathleen Jones",
-            "Bruce Peterson",
+            "Margaret Maynard",
+            "Lillian Riley",
+            "Christy Rader",
             "Kei Nishikori"
         ]
     },
@@ -863,9 +863,9 @@ const quizData = {
         "GoodAnswer": "Fletcher Cox",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Football_ballonicon2.svg/35px-Football_ballonicon2.svg.png",
         "AllAnswer": [
-            "Jacqueline Gregory",
-            "Teri Smith",
-            "Lynn Farley",
+            "Elida Lawton",
+            "Margaret Wilcox",
+            "Charles Holstein",
             "Fletcher Cox"
         ]
     },
@@ -873,9 +873,9 @@ const quizData = {
         "GoodAnswer": "Clayton Kershaw",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Baseball_pictogram.svg/40px-Baseball_pictogram.svg.png",
         "AllAnswer": [
-            "Theresa Evans",
-            "Rhonda Dennis",
-            "Jovita Simpson",
+            "Ronald Burdick",
+            "Hugh Love",
+            "Dixie Simpson",
             "Clayton Kershaw"
         ]
     },
@@ -883,9 +883,9 @@ const quizData = {
         "GoodAnswer": "Chance The Rapper",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Chance_The_Rapper_2013.jpg/290px-Chance_The_Rapper_2013.jpg",
         "AllAnswer": [
-            "Kimberly Bowman",
-            "Wendy Steele",
-            "Elenora Sutphin",
+            "Paul Cundiff",
+            "Daniel Lowery",
+            "Jack Robinson",
             "Chance The Rapper"
         ]
     },
@@ -893,9 +893,9 @@ const quizData = {
         "GoodAnswer": "Katy Perry",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Katy_Perry_2019_by_Glenn_Francis.jpg/220px-Katy_Perry_2019_by_Glenn_Francis.jpg",
         "AllAnswer": [
-            "Lana Altic",
-            "Karen Luna",
-            "Mary Baillie",
+            "Annabelle Howes",
+            "Jessica Ranck",
+            "Louis Fishman",
             "Katy Perry"
         ]
     },
@@ -903,9 +903,9 @@ const quizData = {
         "GoodAnswer": "Carmelo Anthony",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Carmelo_Anthony_Nov_2013.jpg/250px-Carmelo_Anthony_Nov_2013.jpg",
         "AllAnswer": [
-            "Amber Lewis",
-            "Mark Angle",
-            "Zachary Davis",
+            "Allan Williams",
+            "David Balowski",
+            "Violet Mckillop",
             "Carmelo Anthony"
         ]
     },
@@ -913,9 +913,9 @@ const quizData = {
         "GoodAnswer": "Jason Aldean",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Circle-icons-microphone.svg/35px-Circle-icons-microphone.svg.png",
         "AllAnswer": [
-            "Daniel Filipponi",
-            "Henry Santarpia",
-            "Mary Thorson",
+            "Cory Clark",
+            "Jack Sweeney",
+            "Lindsay Fraley",
             "Jason Aldean"
         ]
     },
@@ -923,9 +923,9 @@ const quizData = {
         "GoodAnswer": "Kevin Hart",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Kevin_Hart_2014.jpg/270px-Kevin_Hart_2014.jpg",
         "AllAnswer": [
-            "Bernadine Slaton",
-            "Shalon Hurt",
-            "Richard Walter",
+            "Jason Walk",
+            "Sean Martin",
+            "Adam Rook",
             "Kevin Hart"
         ]
     },
@@ -933,9 +933,9 @@ const quizData = {
         "GoodAnswer": "Zlatan Ibrahimovic",
         "Picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Zlatan_Ibrahimovi%C4%87_June_2018.jpg/210px-Zlatan_Ibrahimovi%C4%87_June_2018.jpg",
         "AllAnswer": [
-            "Donald Xia",
-            "Larry Johnson",
-            "Teri Garner",
+            "John Smith",
+            "John Mendoza",
+            "Latisha Coburn",
             "Zlatan Ibrahimovic"
         ]
     }
