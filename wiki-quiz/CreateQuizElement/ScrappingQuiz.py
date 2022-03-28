@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import names
+import random
 
 
 # Create names to propose others answer for the playeur
@@ -46,24 +47,26 @@ def createUnderDico(Recherche):
 
 
 # Take dico with all of Celebrity's informations and return a dico with all of dico for quiz.
-def dicoToFileJson(tabRecherche, nameFile):
+def dicoToFileJson(tabRecherche, nameFile, numberQuestion):
+    random.shuffle(tabRecherche)
     quizData = {}
     urlFile = "wiki-quiz/src/datas/" + nameFile + ".js"
-    fichier = open(urlFile, "w")
     i = 0
     m = 0
-    while i < len(tabRecherche):
+    while len(quizData) < numberQuestion:
         element = createUnderDico(tabRecherche[i])
         if element != None :
             quizData["Question-" + str(m)] = element
             m+=1
         i+=1
+    
+    fichier = open(urlFile, "w")
     ContentFile = "const quizData = " + json.dumps(quizData, indent = 4) + "\n" + "export default quizData"
     fichier.write(ContentFile)
     fichier.close()
 
 
-# Take the 100 famous celebrity's list and retrun a tab with his names.
+# Take famous celebrity's list and retrun a tab with his names.
 def GenerateStarToFind():
         url = "https://www.forbes.fr/classements/top-100-celebrites-mieux-payees/"
         requete = requests.get(url)
@@ -80,4 +83,4 @@ def GenerateStarToFind():
         return contentTest
 
     
-dicoToFileJson(GenerateStarToFind(), "ElementOfTheQuiz")
+dicoToFileJson(GenerateStarToFind(), "ElementOfTheQuiz", 10)
