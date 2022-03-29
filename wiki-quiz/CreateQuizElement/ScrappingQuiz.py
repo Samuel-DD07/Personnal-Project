@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import names
 import random
+from flask import Flask
 
 
 # Create names to propose others answer for the playeur
@@ -46,26 +47,6 @@ def createUnderDico(Recherche):
         return None 
 
 
-# Take dico with all of Celebrity's informations and return a dico with all of dico for quiz.
-def dicoToFileJson(tabRecherche, nameFile, numberQuestion):
-    random.shuffle(tabRecherche)
-    quizData = {}
-    urlFile = "wiki-quiz/src/datas/" + nameFile + ".js"
-    i = 0
-    m = 0
-    while len(quizData) < numberQuestion:
-        element = createUnderDico(tabRecherche[i])
-        if element != None :
-            quizData["Question-" + str(m)] = element
-            m+=1
-        i+=1
-    
-    fichier = open(urlFile, "w")
-    ContentFile = "const quizData = " + json.dumps(quizData, indent = 4) + "\n" + "export default quizData"
-    fichier.write(ContentFile)
-    fichier.close()
-
-
 # Take famous celebrity's list and retrun a tab with his names.
 def GenerateStarToFind():
         url = "https://www.forbes.fr/classements/top-100-celebrites-mieux-payees/"
@@ -82,5 +63,28 @@ def GenerateStarToFind():
         contentTest.pop(0)
         return contentTest
 
+# Take dico with all of Celebrity's informations and return a dico with all of dico for quiz.
+def dicoToFileJson(tabRecherche, numberQuestion):
+    random.shuffle(tabRecherche)
+    quizData = {}
+    i = 0
+    m = 0
+    while len(quizData) < numberQuestion:
+        element = createUnderDico(tabRecherche[i])
+        if element != None :
+            quizData["Question-" + str(m)] = element
+            m+=1
+        i+=1
     
-dicoToFileJson(GenerateStarToFind(), "ElementOfTheQuiz", 10)
+    return quizData
+
+
+
+app = Flask(__name__)
+
+@app.route("/dataQuiz")
+def dataQuiz():
+    return {"dataQuiz": dicoToFileJson(GenerateStarToFind(), 5)}
+    
+if __name__ == "__main__":
+    app.run(debug=True)
