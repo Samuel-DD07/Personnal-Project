@@ -9,7 +9,7 @@ const Question = (props) =>{
     function UpdateQuestion (MyAnswer, GoodAnswer){
         nextQuestion(numberQuestion + 1)
         if (MyAnswer === GoodAnswer){
-            MyScore += 10
+            MyScore += 1
         }
     }
     
@@ -61,7 +61,7 @@ const Question = (props) =>{
 
                 <div className="Question">
                     <div className="FinalScore">
-                        <h1>Ton score est de : {MyScore} / {(DataLen + 1) * 10 } </h1>
+                        <h1>Ton score est de : {MyScore} / {(DataLen)} </h1>
                         <h1>J'ai la flemme de te féliciter ou te dire que t'es nul !! 🤫</h1>
                         <button onClick={refreshPage}>Tu veux rejouer ?</button>
                     </div>
