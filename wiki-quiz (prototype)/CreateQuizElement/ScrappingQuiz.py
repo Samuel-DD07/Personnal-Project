@@ -84,7 +84,9 @@ app = Flask(__name__)
 
 @app.route("/dataQuiz")
 def dataQuiz():
-    return {"dataQuiz": dicoToFileJson(GenerateStarToFind(), 5)}
+    quiz = dicoToFileJson(GenerateStarToFind(), 5)
+    print(quiz)
+    return {"dataQuiz": quiz}
     
 if __name__ == "__main__":
     app.run(debug=True)
