@@ -1,23 +1,25 @@
 import './App.css'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
 
 function App() {
 
-  const [data, setdata] = useState([{}])
+  // const [dataScrapped, setdataScrapped] = useState([{}])
 
-  useEffect(() =>{
-    fetch("/dataCrypto").then(
-      res => res.json()
-    ).then(
-      data => {
-        setdata(data)
-      }
-    )
-  }, [])
+  // useEffect(() =>{
+  //   fetch("/dataCrypto").then(
+  //     res => res.json()
+  //   ).then(
+  //     dataScrapped => {
+  //       setdataScrapped(dataScrapped)
+  //     }
+  //   )
+  // }, [])
 
 
   return (
     <div className="App">
+      OK
     </div>
   );
 }
