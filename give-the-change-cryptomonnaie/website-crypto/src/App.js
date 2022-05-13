@@ -1,25 +1,26 @@
 import './App.css'
-import { useEffect, useState } from 'react';
-
+import MyCryptoBefore from './components/MyCryptoBefore';
+import MyCryptoAfter from './components/MyCryptoAfter';
+import { useState, useEffect } from 'react';
 
 function App() {
 
-  // const [dataScrapped, setdataScrapped] = useState([{}])
+  const [data, setdata] = useState([{}])
 
-  // useEffect(() =>{
-  //   fetch("/dataCrypto").then(
-  //     res => res.json()
-  //   ).then(
-  //     dataScrapped => {
-  //       setdataScrapped(dataScrapped)
-  //     }
-  //   )
-  // }, [])
-
+  useEffect(() =>{
+    fetch("/dataCrypto").then(
+      res => res.json()
+    ).then(
+      data => {
+        setdata(data.dataCrypto)
+      }
+    )
+  }, [])
 
   return (
     <div className="App">
-      OK
+      <MyCryptoBefore ListCrypto={data}/>
+      {/* <MyCryptoAfter /> */}
     </div>
   );
 }
