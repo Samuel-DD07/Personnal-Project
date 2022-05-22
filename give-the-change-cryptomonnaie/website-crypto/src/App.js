@@ -19,8 +19,15 @@ function App() {
 
   return (
     <div className="App">
+      {/*
+        data ? 
+            <h1>chargement</h1>
+        :
+            <MyCryptoBefore ListCrypto={data}/>
+            /* <MyCryptoAfter /> */
+      }
+
       <MyCryptoBefore ListCrypto={data}/>
-      {/* <MyCryptoAfter /> */}
     </div>
   );
 }
