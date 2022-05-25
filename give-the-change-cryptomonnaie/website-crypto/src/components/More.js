@@ -1,13 +1,12 @@
 export default function More(props){
 
-    const { setNewContent } = props
+    const { setNewContent, number } = props
 
-    function ajoute(event){
-        // console.log(event.target.parentNode.children[0])
-        setNewContent(event.target.parentNode)
+    function ajouter(){
+        setNewContent(number+1)
     }
 
     return (
-        <div onClick={(event) => ajoute(event)}>+</div>
+        <button onClick={() => ajouter()}>+</button>
     )
 }
