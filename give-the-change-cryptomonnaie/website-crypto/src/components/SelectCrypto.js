@@ -1,9 +1,10 @@
 export default function SelectCrypto(props){
 
-    const {dicoCrypto, setCryptoSelected} = props
+    const {dicoCrypto, setCryptoSelected, indice, element} = props
 
     const CryptoSelected = (event) => {
-        setCryptoSelected(event.target.value)
+        element[indice] = event.target.value
+        setCryptoSelected(element)
     }
 
     return(

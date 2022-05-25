@@ -1,6 +1,5 @@
 import './App.css'
 import MyCryptoBefore from './components/MyCryptoBefore';
-import MyCryptoAfter from './components/MyCryptoAfter';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -15,19 +14,11 @@ function App() {
         setdata(data.dataCrypto)
       }
     )
-  }, [])
+  }, [data])
 
   return (
     <div className="App">
-      {/*
-        data ? 
-            <h1>chargement</h1>
-        :
-            <MyCryptoBefore ListCrypto={data}/>
-            /* <MyCryptoAfter /> */
-      }
-
-      <MyCryptoBefore ListCrypto={data}/>
+        <MyCryptoBefore ListCrypto={data} number={2}/>
     </div>
   );
 }
