@@ -7,6 +7,7 @@ export default function Percent(props){
     return(
         <input 
             type="text" 
+            className="Pourcentage"
             placeholder="25%" 
             onChange={e => changeInput(e)}
             onKeyPress={(event) => {

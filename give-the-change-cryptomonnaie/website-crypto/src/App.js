@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 function App() {
 
-  const [data, setdata] = useState([{}])
+  const [data, setdata] = useState()
 
   useEffect(() =>{
     fetch("/dataCrypto").then(
@@ -18,7 +18,10 @@ function App() {
 
   return (
     <div className="App">
-        <MyCryptoBefore ListCrypto={data} number={2}/>
+        {data ?
+          <MyCryptoBefore ListCrypto={data} number={2}/>
+          :
+          <h1>Chargement</h1>}
     </div>
   );
 }
