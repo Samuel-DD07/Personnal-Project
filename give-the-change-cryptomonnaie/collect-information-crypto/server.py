@@ -6,7 +6,6 @@ app = Flask(__name__)
 @app.route("/dataCrypto")
 def dataCrypto():
     data = dicoNameAndPriceCrypto(searchNameCrypto())
-    print(data)
     return {"dataCrypto": data}
 
 if __name__ == "__main__":
