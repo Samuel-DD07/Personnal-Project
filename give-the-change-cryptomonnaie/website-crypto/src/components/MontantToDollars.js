@@ -7,6 +7,9 @@ export default function MontantToDollars(props){
     }
 
     return (
-        <div className="Montant">{`Montant total en USD : $${MontantCrypto * PriceCrypto}`}</div>
+        (MontantCrypto || PriceCrypto) ?
+        <div className="Montant">{`Montant total : $${MontantCrypto * PriceCrypto}`}</div>
+        :
+        <div className="Montant">Montant total :</div>
     )
 }

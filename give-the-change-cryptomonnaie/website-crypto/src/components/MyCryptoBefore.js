@@ -13,22 +13,17 @@ export default function MyCryptoBefore(props){
     const { ListCrypto, number } = props
     const [CryptoSelected, setCryptoSelected] = useState({0: "BNB"})
     const [NewContent, setNewContent] = useState(1)
-    const [AmountValue, SetAmountValue] = useState(1)
+    const [AmountValue, SetAmountValue] = useState({0: 0})
+    const [PercentValue, SetPercentValue] = useState({0: 0})
     const tab = []
 
     for (let i = 0; i < NewContent && i < number ; i++) {
         tab.push(NewContent)
-        console.log(tab);
     }
 
     return (
         tab.map((e, i) =>
             <Block key={i}>
-
-                    <Price
-                        cryptoPrice={ListCrypto[CryptoSelected[i]]}
-                    />
-
                     <Content>
                         <SelectCrypto 
                             dicoCrypto={ListCrypto} 
@@ -36,24 +31,41 @@ export default function MyCryptoBefore(props){
                             indice={i} 
                             element={CryptoSelected}
                         />
+
                         <Amount 
                             SetAmountValue={AmountValue => SetAmountValue(AmountValue)} 
-                            Amount={AmountValue}/>
-                        <Percent />
+                            Amount={AmountValue}
+                            indice={i}
+                        />
+
+                        <Percent 
+                            SetPercentValue={PercentValue => SetPercentValue(PercentValue)}
+                            PercentValue={PercentValue}
+                            indice={i}
+                        />
+
                     </Content>
                     
+                    <Price
+                        cryptoPrice={ListCrypto[CryptoSelected[i]]}
+                    />
+
                     <MontantToDollars 
-                        MontantCrypto={AmountValue} 
+                        MontantCrypto={AmountValue[i]} 
                         PriceCrypto={ListCrypto[CryptoSelected[i]]}
                     />
                     <div className="PlusMoins">
                         <More 
                             setNewContent={NewContent => setNewContent(NewContent)} 
                             number={NewContent}
+                            i = {number}
+                            trueFalse={NewContent === number}
                         />
                         <Less 
                             setNewContent={NewContent => setNewContent(NewContent)} 
                             number={NewContent}
+                            i = {number}
+                            trueFalse={NewContent === number}
                         />
                     </div>
             </Block>
@@ -63,12 +75,19 @@ export default function MyCryptoBefore(props){
 
 const Block = styled.div`
     position: relative;
+    margin: 50px;
     display: grid;
-    margin: 20px;
-    grid-template-columns: repeat(6, 100px);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    width: 1000px;
+    height: 80px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(39, 38, 44);
     animation: animated 1s;
+    border: 2px solid rgb(81, 75, 97);
     transition: 1s all;
     
     @keyframes animated {
@@ -81,18 +100,40 @@ const Block = styled.div`
     }
 
     .Price{
-        background-color: #14AEEE;
-        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100% - 4px);
+        background: none;
         text-align: center;
-        grid-column: 1 / 6;
+        border: 2px solid rgb(219, 87, 156);
+        color: rgb(219, 87, 156);
+        grid-area: 1 / 3 / 2 / 4;
+        transition: 1s all;
+
+        &:hover{
+                color: white;
+                background-color: rgb(219, 87, 156);
+            }
     }
 
     .Montant{
-        background-color: blue;
-        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        grid-column: 1 / 6;
-        grid-row: 3;
+        height: calc(100% - 4px);
+        background: none;
+        text-align: center;
+        border: 2px solid rgb(149, 108, 247);
+        color: rgb(149, 108, 247);
+        grid-area: 1 / 4 / 2 / 5;
+        transition: 1s all;
+        
+        &:hover{
+                color: white;
+                background-color: rgb(149, 108, 247);
+            }
     }
 
     .PlusMoins{
@@ -100,37 +141,63 @@ const Block = styled.div`
         align-items: center;
         justify-content: space-around;
         flex-direction: row;
-        grid-column: 6 / 7;
-        grid-row: 1 / 4;
-        border: 1px solid green;
+        grid-area: 1 / 5 / 2 / 6;
+
         *{
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 40px;
+            font-size: large;
+            line-height: -100px;
             border-radius: 50px;
-            border: 1px solid black;
+            background: none;
+            color: rgb(95, 196, 206);
+            border: 2px solid rgb(95, 196, 206);
+            transition: 1s all;
+
+            &:hover{
+                color: white;
+                background-color: rgb(95, 196, 206);
+            }
         }
+
     }
 `
 const Content = styled.div`
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    grid-column: 1 / 6;
-    grid-row: 2;
+    align-items: center;    
+    grid-area: 1 / 1 / 2 / 3; 
+
+    * {
+        border: none;
+        color: white;
+    }
 
     .SelectCrypto{
-        border: 1px solid black;
         width: 100%;
-        height: 20px;
+        height: 100%;
+        text-align: center;
+        background: none;
+        border-right: 3px solid rgb(81, 75, 97);
+        border-radius: 50px 0 0 50px;
+        appearance: none;
     }
+
     .Amount{
         width: 100%;
+        height: calc(100% - 4px);
+        background: none;
+        text-align: center;
+        border-right: 3px solid rgb(81, 75, 97);
     }
 
     .Pourcentage{
         width: 50px;
+        height: calc(100% - 4px);
+        background: none;
+        text-align: center;
     }
 `

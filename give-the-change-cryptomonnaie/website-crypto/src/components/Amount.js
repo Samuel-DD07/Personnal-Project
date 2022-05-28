@@ -1,9 +1,10 @@
 export default function Amount(props){
 
-    const { SetAmountValue } = props
+    const { SetAmountValue, Amount, indice} = props
 
     function changeInput(e){
-        SetAmountValue(e.target.value)
+        Amount[indice] = e.target.value
+        SetAmountValue(Amount)
     }
 
     return(

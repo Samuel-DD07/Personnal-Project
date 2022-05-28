@@ -1,12 +1,18 @@
 export default function More(props){
 
-    const { setNewContent, number } = props
+    const { setNewContent, number, i, trueFalse } = props
 
     function ajouter(){
-        setNewContent(number+1)
+        if (number < i){
+            setNewContent(number+1)
+            console.log(i, number);
+        }
     }
 
     return (
+        trueFalse ?
+        ""
+        :
         <button onClick={() => ajouter()}>+</button>
     )
 }
