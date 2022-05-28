@@ -17,6 +17,10 @@ export default function MyCryptoBefore(props){
     const [PercentValue, SetPercentValue] = useState({0: 0})
     const tab = []
 
+    const sumValues = obj => Object.values(obj).reduce((a, b) => parseFloat(a) + parseFloat(b));
+
+    console.log(sumValues(PercentValue))
+
     for (let i = 0; i < NewContent && i < number ; i++) {
         tab.push(NewContent)
     }
@@ -84,7 +88,7 @@ const Block = styled.div`
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgb(149, 108, 247) 0px 1px 4px;
     background-color: rgb(39, 38, 44);
     animation: animated 1s;
     border: 2px solid rgb(81, 75, 97);
@@ -93,9 +97,11 @@ const Block = styled.div`
     @keyframes animated {
         0%{
             opacity: 0;
+            transform: translateY(-100px);
         }
         100%{
             opacity: 1;
+            transform: translateY(0px);
         }
     }
 
