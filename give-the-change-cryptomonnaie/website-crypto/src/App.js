@@ -30,7 +30,11 @@ function App() {
         <div className='BeforeCrypto'>
             <h1>Votre cryptomonnaie :</h1>
             {data ?
-              <MyCryptoBefore ListCrypto={data} number={2}/>
+              <MyCryptoBefore 
+                ListCrypto={data} 
+                number={2} 
+                checkAmount={true}
+              />
               :
               <h1>Chargement . . .</h1>}
         </div>
@@ -38,7 +42,11 @@ function App() {
         <div className='AfterCrypto'>
               <h1>Votre monnaie :</h1>
               {data ?
-              <MyCryptoAfter ListCrypto={data} number={2}/>
+              <MyCryptoAfter 
+                ListCrypto={data} 
+                number={2}
+                checkAmount={false}
+                />
               :
               <h1>Chargement . . .</h1>}
         </div>

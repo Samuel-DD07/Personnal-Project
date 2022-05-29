@@ -10,7 +10,7 @@ import { useState } from "react"
 
 export default function MyCryptoBefore(props){
 
-    const { ListCrypto, number } = props
+    const { ListCrypto, number, checkAmount } = props
     const [CryptoSelected, setCryptoSelected] = useState({0: "BNB"})
     const [NewContent, setNewContent] = useState(1)
     const [AmountValue, SetAmountValue] = useState({0: 0})
@@ -19,7 +19,7 @@ export default function MyCryptoBefore(props){
 
     const sumValues = obj => Object.values(obj).reduce((a, b) => parseFloat(a) + parseFloat(b));
 
-    console.log(sumValues(PercentValue))
+    const SumMyCrypto = sumValues(AmountValue)
 
     for (let i = 0; i < NewContent && i < number ; i++) {
         tab.push(NewContent)
@@ -36,17 +36,19 @@ export default function MyCryptoBefore(props){
                             element={CryptoSelected}
                         />
 
-                        <Amount 
-                            SetAmountValue={AmountValue => SetAmountValue(AmountValue)} 
-                            Amount={AmountValue}
-                            indice={i}
-                        />
-
-                        <Percent 
-                            SetPercentValue={PercentValue => SetPercentValue(PercentValue)}
-                            PercentValue={PercentValue}
-                            indice={i}
-                        />
+                        { checkAmount ?
+                            <Amount 
+                                SetAmountValue={AmountValue => SetAmountValue(AmountValue)} 
+                                Amount={AmountValue}
+                                indice={i}
+                            />
+                            :
+                            <Percent 
+                                SetPercentValue={PercentValue => SetPercentValue(PercentValue)}
+                                PercentValue={PercentValue}
+                                indice={i}
+                            />
+                         }
 
                     </Content>
                     
@@ -57,7 +59,11 @@ export default function MyCryptoBefore(props){
                     <MontantToDollars 
                         MontantCrypto={AmountValue[i]} 
                         PriceCrypto={ListCrypto[CryptoSelected[i]]}
+                        PercentValue={PercentValue[i]}
+                        checkAmount={checkAmount}
+                        sumCrypto={SumMyCrypto}
                     />
+
                     <div className="PlusMoins">
                         <More 
                             setNewContent={NewContent => setNewContent(NewContent)} 
@@ -201,7 +207,7 @@ const Content = styled.div`
     }
 
     .Pourcentage{
-        width: 50px;
+        width: 100%;
         height: calc(100% - 4px);
         background: none;
         text-align: center;

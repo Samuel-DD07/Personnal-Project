@@ -5,7 +5,6 @@ export default function More(props){
     function ajouter(){
         if (number < i){
             setNewContent(number+1)
-            console.log(i, number);
         }
     }
 
