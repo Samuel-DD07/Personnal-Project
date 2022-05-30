@@ -1,23 +1,25 @@
 export default function MontantToDollars(props){
 
-    let { MontantCrypto, PriceCrypto, PercentValue, checkAmount, sumCrypto } = props
+    let { MontantCrypto, PriceCrypto, PercentValue, CheckAmount } = props
 
     if(PriceCrypto) {
-        PriceCrypto = parseFloat(PriceCrypto.replace('$', ''))
+        PriceCrypto = PriceCrypto.replace('$', '').replace(',','')
     }
 
+    // console.log(PriceCrypto);
 
-    if (checkAmount){
+    if (!CheckAmount){
         return (
-            (MontantCrypto || PriceCrypto) ?
-            <div className="Montant">{`Montant total : $${MontantCrypto * PriceCrypto}`}</div>
+            (PercentValue || PriceCrypto) ?
+            <div className="Montant">{`Montant total : $${PercentValue}`}</div>
             :
             <div className="Montant">Montant total :</div>
         )
+
     } else {
         return (
-            (PercentValue || sumCrypto) ?
-            <div className="Montant">{`Montant total : $${PercentValue * sumCrypto / 100}`}</div>
+            (MontantCrypto || PriceCrypto) ?
+            <div className="Montant">{`Montant total : $${MontantCrypto * PriceCrypto}`}</div>
             :
             <div className="Montant">Montant total :</div>
         )

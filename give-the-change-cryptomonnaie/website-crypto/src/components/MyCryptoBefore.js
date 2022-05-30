@@ -17,10 +17,6 @@ export default function MyCryptoBefore(props){
     const [PercentValue, SetPercentValue] = useState({0: 0})
     const tab = []
 
-    const sumValues = obj => Object.values(obj).reduce((a, b) => parseFloat(a) + parseFloat(b));
-
-    const SumMyCrypto = sumValues(AmountValue)
-
     for (let i = 0; i < NewContent && i < number ; i++) {
         tab.push(NewContent)
     }
@@ -28,6 +24,14 @@ export default function MyCryptoBefore(props){
     return (
         tab.map((e, i) =>
             <Block key={i}>
+
+                        {CryptoSelected[i] ?
+                            console.log(ListCrypto[CryptoSelected[i]].replace('$', '') * AmountValue[i])
+                            :
+                            console.log('')
+                        }
+
+
                     <Content>
                         <SelectCrypto 
                             dicoCrypto={ListCrypto} 
@@ -51,7 +55,7 @@ export default function MyCryptoBefore(props){
                          }
 
                     </Content>
-                    
+                
                     <Price
                         cryptoPrice={ListCrypto[CryptoSelected[i]]}
                     />
@@ -60,8 +64,7 @@ export default function MyCryptoBefore(props){
                         MontantCrypto={AmountValue[i]} 
                         PriceCrypto={ListCrypto[CryptoSelected[i]]}
                         PercentValue={PercentValue[i]}
-                        checkAmount={checkAmount}
-                        sumCrypto={SumMyCrypto}
+                        CheckAmount={checkAmount}
                     />
 
                     <div className="PlusMoins">
