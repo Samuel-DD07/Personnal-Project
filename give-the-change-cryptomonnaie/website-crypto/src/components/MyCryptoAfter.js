@@ -2,11 +2,11 @@ import MyCryptoBefore from "./MyCryptoBefore";
 
 export default function MyCryptoAfter(props){
 
-    const { ListCrypto } = props
+    const { ListCrypto, number, checkAmount, MyMontantTotal } = props
 
     const data = ListCrypto
 
     return (
-        <MyCryptoBefore ListCrypto={data} number={5}/>
+        <MyCryptoBefore ListCrypto={data} number={number} checkAmount={checkAmount} MyMontantTotal={MyMontantTotal} />
     )
 }

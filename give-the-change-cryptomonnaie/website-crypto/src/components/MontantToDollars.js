@@ -1,17 +1,24 @@
+import { useEffect } from "react"
+
 export default function MontantToDollars(props){
 
-    let { MontantCrypto, PriceCrypto, PercentValue, CheckAmount } = props
+    let { MontantCrypto, PriceCrypto, PercentValue, CheckAmount, AllMontantCrypto, SetAllMontantCrypto, indice, sumAllCrypto } = props
 
     if(PriceCrypto) {
         PriceCrypto = PriceCrypto.replace('$', '').replace(',','')
     }
 
-    // console.log(PriceCrypto);
+    useEffect(() =>{
+        if(!!MontantCrypto){
+            AllMontantCrypto[indice] = MontantCrypto * PriceCrypto;
+            SetAllMontantCrypto(AllMontantCrypto)
+        }
+    })
 
     if (!CheckAmount){
         return (
             (PercentValue || PriceCrypto) ?
-            <div className="Montant">{`Montant total : $${PercentValue}`}</div>
+            <div className="Montant">{`Montant total : $${PercentValue * sumAllCrypto / 100}`}</div>
             :
             <div className="Montant">Montant total :</div>
         )

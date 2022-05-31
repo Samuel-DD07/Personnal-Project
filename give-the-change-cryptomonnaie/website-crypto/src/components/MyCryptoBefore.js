@@ -6,83 +6,99 @@ import Percent from "./Percent"
 import More from "./More"
 import Less from "./Less"
 import MontantToDollars from "./MontantToDollars"
-import { useState } from "react"
+import MontantTotal from "./MontantTotal"
+import { useEffect, useState } from "react"
 
 export default function MyCryptoBefore(props){
 
-    const { ListCrypto, number, checkAmount } = props
+    const { ListCrypto, number, checkAmount, MyMontant, SetMyMontant, MyMontantTotal } = props
     const [CryptoSelected, setCryptoSelected] = useState({0: "BNB"})
     const [NewContent, setNewContent] = useState(1)
     const [AmountValue, SetAmountValue] = useState({0: 0})
     const [PercentValue, SetPercentValue] = useState({0: 0})
+    const [AllMontantCrypto, SetAllMontantCrypto] = useState({0: 0})
+    const sumCryptoDollars = Object.values(AllMontantCrypto).reduce((a, b) => a + b)
     const tab = []
 
     for (let i = 0; i < NewContent && i < number ; i++) {
         tab.push(NewContent)
     }
 
+    useEffect(() =>{
+        if (MyMontant !== undefined) {
+            SetMyMontant(sumCryptoDollars)
+        }
+    },[SetMyMontant, MyMontant])
+
     return (
-        tab.map((e, i) =>
-            <Block key={i}>
-
-                        {CryptoSelected[i] ?
-                            console.log(ListCrypto[CryptoSelected[i]].replace('$', '') * AmountValue[i])
-                            :
-                            console.log('')
-                        }
-
-
-                    <Content>
-                        <SelectCrypto 
-                            dicoCrypto={ListCrypto} 
-                            setCryptoSelected={CryptoSelected => setCryptoSelected(CryptoSelected)} 
-                            indice={i} 
-                            element={CryptoSelected}
-                        />
-
-                        { checkAmount ?
-                            <Amount 
-                                SetAmountValue={AmountValue => SetAmountValue(AmountValue)} 
-                                Amount={AmountValue}
-                                indice={i}
+        <div className="BlockContent">
+            {
+                tab.map((e, i) =>
+                <Block key={i}>
+                        <Content>
+                            <SelectCrypto 
+                                dicoCrypto={ListCrypto} 
+                                setCryptoSelected={CryptoSelected => setCryptoSelected(CryptoSelected)} 
+                                indice={i} 
+                                element={CryptoSelected}
                             />
-                            :
-                            <Percent 
-                                SetPercentValue={PercentValue => SetPercentValue(PercentValue)}
-                                PercentValue={PercentValue}
-                                indice={i}
+    
+                            { checkAmount ?
+                                <Amount 
+                                    SetAmountValue={AmountValue => SetAmountValue(AmountValue)} 
+                                    Amount={AmountValue}
+                                    indice={i}
+                                />
+                                :
+                                <Percent 
+                                    SetPercentValue={PercentValue => SetPercentValue(PercentValue)}
+                                    PercentValue={PercentValue}
+                                    indice={i}
+                                />
+                             }
+                        </Content>
+                    
+                        <Price
+                            cryptoPrice={ListCrypto[CryptoSelected[i]]}
+                        />
+    
+                        <MontantToDollars 
+                            MontantCrypto={AmountValue[i]} 
+                            PriceCrypto={ListCrypto[CryptoSelected[i]]}
+                            PercentValue={PercentValue[i]}
+                            CheckAmount={checkAmount}
+                            AllMontantCrypto={AllMontantCrypto}
+                            SetAllMontantCrypto={AllMontantCrypto => SetAllMontantCrypto(AllMontantCrypto)}
+                            sumAllCrypto={MyMontantTotal}
+                            indice={i}
+                        />
+    
+                        <div className="PlusMoins">
+                            <More 
+                                setNewContent={NewContent => setNewContent(NewContent)} 
+                                number={NewContent}
+                                i = {number}
+                                trueFalse={NewContent === number}
                             />
-                         }
-
-                    </Content>
-                
-                    <Price
-                        cryptoPrice={ListCrypto[CryptoSelected[i]]}
-                    />
-
-                    <MontantToDollars 
-                        MontantCrypto={AmountValue[i]} 
-                        PriceCrypto={ListCrypto[CryptoSelected[i]]}
-                        PercentValue={PercentValue[i]}
-                        CheckAmount={checkAmount}
-                    />
-
-                    <div className="PlusMoins">
-                        <More 
-                            setNewContent={NewContent => setNewContent(NewContent)} 
-                            number={NewContent}
-                            i = {number}
-                            trueFalse={NewContent === number}
-                        />
-                        <Less 
-                            setNewContent={NewContent => setNewContent(NewContent)} 
-                            number={NewContent}
-                            i = {number}
-                            trueFalse={NewContent === number}
-                        />
-                    </div>
-            </Block>
-        )
+                            <Less 
+                                setNewContent={NewContent => setNewContent(NewContent)} 
+                                number={NewContent}
+                                i = {number}
+                                trueFalse={NewContent === number}
+                            />
+                        </div>
+                </Block>
+            )
+            }
+            { checkAmount ?
+                <div>
+                    <h3>Montant Total de votre cryptomonnaie :</h3>
+                    <MontantTotal value={sumCryptoDollars}/> 
+                </div>
+                :
+                ''
+            }
+        </div>
     )
 }
 
@@ -102,17 +118,6 @@ const Block = styled.div`
     animation: animated 1s;
     border: 2px solid rgb(81, 75, 97);
     transition: 1s all;
-    
-    @keyframes animated {
-        0%{
-            opacity: 0;
-            transform: translateY(-100px);
-        }
-        100%{
-            opacity: 1;
-            transform: translateY(0px);
-        }
-    }
 
     .Price{
         display: flex;

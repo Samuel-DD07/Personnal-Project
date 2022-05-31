@@ -52,3 +52,37 @@ button:hover{
     background-color: rgb(95, 196, 206);
     color: white;
 }
+
+.MontantTotal{
+    border-radius: 50px;
+    width: 600px;
+    border: 2px solid rgb(95, 196, 206);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    box-shadow: rgb(95, 196, 206) 0px 1px 4px;
+    transition: 1s all;
+}
+
+.MontantTotal:hover{
+    color: white;
+    transition: 1s all;
+    background-color: rgb(95, 196, 206);
+}
+
+.BlockContent{
+    animation: animated 1s;
+    transition: 1s all;
+}
+
+@keyframes animated {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
