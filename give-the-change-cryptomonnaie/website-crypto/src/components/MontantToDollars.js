@@ -18,7 +18,7 @@ export default function MontantToDollars(props){
     if (!CheckAmount){
         return (
             (PercentValue || PriceCrypto) ?
-            <div className="Montant">{`Montant total : $${PercentValue * sumAllCrypto / 100}`}</div>
+            <div className="Montant">{`Montant total : $${Math.round(PercentValue * sumAllCrypto / 100)}`}</div>
             :
             <div className="Montant">Montant total :</div>
         )
@@ -26,7 +26,7 @@ export default function MontantToDollars(props){
     } else {
         return (
             (MontantCrypto || PriceCrypto) ?
-            <div className="Montant">{`Montant total : $${MontantCrypto * PriceCrypto}`}</div>
+            <div className="Montant">{`Montant total : $${Math.round(MontantCrypto * PriceCrypto)}`}</div>
             :
             <div className="Montant">Montant total :</div>
         )

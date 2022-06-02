@@ -18,6 +18,7 @@ export default function MyCryptoBefore(props){
     const [PercentValue, SetPercentValue] = useState({0: 0})
     const [AllMontantCrypto, SetAllMontantCrypto] = useState({0: 0})
     const sumCryptoDollars = Object.values(AllMontantCrypto).reduce((a, b) => a + b)
+    const sumPercentDollars = Object.values(PercentValue).reduce((a, b) => parseInt(a) + parseInt(b))
     const tab = []
 
     for (let i = 0; i < NewContent && i < number ; i++) {
@@ -29,6 +30,14 @@ export default function MyCryptoBefore(props){
             SetMyMontant(sumCryptoDollars)
         }
     },[SetMyMontant, MyMontant])
+
+    useEffect(() =>{
+        if (sumPercentDollars > 0 && sumPercentDollars == 100) {
+            console.log('Echange possible');
+        } else {
+            console.log('Echange impossible');
+        }
+    },[sumPercentDollars])
 
     return (
         <div className="BlockContent">
