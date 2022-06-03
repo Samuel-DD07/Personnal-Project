@@ -1,6 +1,6 @@
 import './App.css'
 import { useState, useEffect } from 'react';
-import MyCrypto from './MyCrypto';
+import MyCrypto from './components/MyCrypto';
 
 function App() {
 
@@ -28,6 +28,10 @@ function App() {
         <MyCrypto data={data}/>
         :
         <h1>Chargement . . .</h1>}
+
+        <footer>
+            <h3>Site Web développé par Samuel Dorismond.</h3>
+        </footer>
     </div>
   );
 }

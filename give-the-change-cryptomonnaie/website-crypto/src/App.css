@@ -4,6 +4,7 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -58,7 +59,7 @@ button:hover{
     width: 600px;
     border: 2px solid rgb(95, 196, 206);
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     margin: auto;
     box-shadow: rgb(95, 196, 206) 0px 1px 4px;
@@ -85,4 +86,40 @@ button:hover{
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+@keyframes animated2 {
+    0%{
+        opacity: 0;
+        transform: scale(0)
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+.alert{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 40%;
+    bottom: 50%;
+    width: 500px;
+    height: 200px;
+    border: 2px solid rgb(95, 196, 206);
+    background-color: #0E0E0E;
+    color: white;
+    animation: animated2 1s;
+    transition: 1s all;
+}
+
+footer{
+    margin-top: 100px;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid rgb(95, 196, 206);
 }

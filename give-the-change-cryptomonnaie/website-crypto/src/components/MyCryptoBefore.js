@@ -11,7 +11,8 @@ import { useEffect, useState } from "react"
 
 export default function MyCryptoBefore(props){
 
-    const { ListCrypto, number, checkAmount, MyMontant, SetMyMontant, MyMontantTotal } = props
+    const { ListCrypto, number, checkAmount, MyMontant, SetMyMontant, MyMontantTotal, Exchange, SetExchange } = props
+
     const [CryptoSelected, setCryptoSelected] = useState({0: "BNB"})
     const [NewContent, setNewContent] = useState(1)
     const [AmountValue, SetAmountValue] = useState({0: 0})
@@ -29,15 +30,16 @@ export default function MyCryptoBefore(props){
         if (MyMontant !== undefined) {
             SetMyMontant(sumCryptoDollars)
         }
-    },[SetMyMontant, MyMontant])
+    },[SetMyMontant, MyMontant, sumCryptoDollars])
 
     useEffect(() =>{
-        if (sumPercentDollars > 0 && sumPercentDollars == 100) {
-            console.log('Echange possible');
-        } else {
-            console.log('Echange impossible');
+        if (sumPercentDollars > 0 && sumPercentDollars == 100 && !Exchange) {
+            SetExchange(true)
         }
-    },[sumPercentDollars])
+        if (sumPercentDollars > 0 && sumPercentDollars < 100 && Exchange) {
+            SetExchange(false)
+        }
+    },[sumPercentDollars, Exchange, SetExchange])
 
     return (
         <div className="BlockContent">
