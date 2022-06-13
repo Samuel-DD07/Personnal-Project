@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Projets from "./Projets"
 
 export default function Home(props){
 
@@ -21,6 +22,7 @@ export default function Home(props){
                 </div>
                 <img className="background" src={data.background} alt="background"/>
             </Section>
+            <Projets />
         </div>
     )
 }
@@ -53,7 +55,6 @@ const Section = styled.section`
     }
 
     .text-content{
-        letter-spacing: 3px;
         color: white;
         margin-left: 20px;
         width: 70vw;
