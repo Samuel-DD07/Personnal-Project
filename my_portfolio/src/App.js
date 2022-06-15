@@ -25,7 +25,7 @@ function App() {
         <MyHeader />
         <Routes>
           <Route exact path='/'>
-            <Route exact path='/Home' element={<Home />} />
+            <Route exact path='/' element={<Home data={dataTest}/>} />
             <Route exact path='/Projets' element={<Projets data={dataTest}/>} />
             <Route exact path='/AproposDeMoi' element={<AproposDeMoi />} />
             <Route exact path='/Contact' element={<Contact />} />

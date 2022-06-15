@@ -29,8 +29,8 @@ const Containt = styled.header`
     width: 100vw;
     height: 100px;
     padding: 50px;
-    backdrop-filter: blur(20px);
-    background-color: rgba(24, 26, 43, 0.75);
+    /* backdrop-filter: blur(20px);
+    background-color: rgba(24, 26, 43, 0.75); */
 
     & > *{
         animation: animation1 1s ease-in-out;

@@ -52,10 +52,10 @@ const Container = styled.section`
     }
 
     & > *{
-        animation: transition1 1s ease-in-out;
+        animation: transition1 2s ease-in-out;
 
         &:nth-child(2n+1){
-            animation: transition1 2s ease-in-out;
+            animation: transition1 1s ease-in-out;
         }
     }
 `
@@ -118,7 +118,7 @@ const Block = styled.div`
 
     @keyframes transition1 {
         0%{
-            transform: translateX(100px);
+            transform: translatey(200px);
             opacity: 0;
         }
 
