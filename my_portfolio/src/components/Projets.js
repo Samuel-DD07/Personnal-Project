@@ -8,30 +8,23 @@ export default function Projets(props){
 
     return (
         <div>
-            <Container>
-            <div>
+            <Content>
                 <h1>Mes Projets</h1>
                 <br/>
                 <h3>Vous trouverez ici tous mes projets que j'ai effectué seul ou durant mon B.U.T informatique.</h3>
-            </div>
+            </Content>
+            <Container>
                 {data.map((e, i) =>
                     <div key={i}>
                         <Block>
                             <Link to={e.Link}>
-                                <div>
-                                    <img src={e.Logo} alt="Logo" />
-                                    <h1>{e.Titre}</h1>
-                                    <h3>{e.Description}</h3>
-                                    <ul>
-                                        {e.Langages.map((n, x) =>
-                                            <li key={x}>{n}</li>
-                                        )}
-                                    </ul>
-                                </div>
                                 <img src={e.Background} alt="background"/>
+                                <div>
+                                    <h1 className="Titre">{e.Titre}</h1>
+                                    <h1 className="Annee">{e.année}</h1>
+                                </div>
                             </Link>
                         </Block>
-                        <h1 className="Annee">{e.année}</h1>
                     </div>
                 )}
             </Container>
@@ -39,22 +32,37 @@ export default function Projets(props){
     )
 }
 
+const Content = styled.div`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+`
+
 const Container = styled.section`
     position: relative;
-    display: grid;
-    grid-gap: 100px;
-    gap: 100px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding: 50px;
-
-    @media (max-width: 800px) {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+        
 
     & > *{
-        animation: transition1 2s ease-in-out;
+        margin: 50px;
+        animation: transition1 1.5s ease-in-out;
 
         &:nth-child(2n+1){
+            animation: transition1 2s ease-in-out;
+        }
+
+        &:nth-child(3n+1){
             animation: transition1 1s ease-in-out;
         }
     }
@@ -64,44 +72,45 @@ const Block = styled.div`
     position: relative;
     display: block;
     overflow: hidden;
+    height: 200px;
+    width: 350px;
+    border-radius: 20px;
+    transition: 1s transform;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
-    height: 90%;
+
+    &:hover{
+        transform: scale(1.2);
+        transition: 1s transform;
+    }
 
     div{
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        color: white;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         height: 100%;
-        padding: 5%;
+        color: white;
 
-        & > *{
-            margin: 2% 0 2% 3%;
+        &:hover{
+            .Annee{
+                display: none;
+            }
         }
 
-        img{
-            position: relative;
-            width: 30%;
-            height: auto;
-            z-index: 2;
+        &:hover{
+            .Titre{
+                display: flex;
+            }
         }
+    }
+
+    .Titre{
+        display: none;
     }
 
     .Annee{
-        position: relative;
-        margin-top: 10%;
-    }
-
-    ul{
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        width: 90%;
-        *{
-            margin-right: 20px;
-        }
     }
 
     img{
