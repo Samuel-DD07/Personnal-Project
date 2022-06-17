@@ -15,4 +15,5 @@ const Content = styled.footer`
     align-items: center;
     width: 100%;
     height: 100px;
+    background-color: rgba(24, 26, 43, 1);
 `

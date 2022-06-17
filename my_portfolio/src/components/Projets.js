@@ -32,7 +32,7 @@ export default function Projets(props){
     )
 }
 
-const Content = styled.div`
+const Content = styled.section`
     position: relative;
     display: flex;
     flex-direction: column;
