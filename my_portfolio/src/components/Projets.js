@@ -11,7 +11,7 @@ export default function Projets(props){
             <Content>
                 <h1>Mes Projets</h1>
                 <br/>
-                <h3>Vous trouverez ici tous mes projets que j'ai effectué seul ou durant mon B.U.T informatique.</h3>
+                <h3>Vous trouverez ici tous mes projets que j'ai effectué.</h3>
             </Content>
             <Container>
                 {data.map((e, i) =>
@@ -20,8 +20,8 @@ export default function Projets(props){
                             <Link to={e.Link}>
                                 <img src={e.Background} alt="background"/>
                                 <div>
-                                    <h1 className="Titre">{e.Titre}</h1>
-                                    <h1 className="Annee">{e.année}</h1>
+                                    <h3 className="Titre">{e.Titre}</h3>
+                                    <h3 className="Annee">{e.année}</h3>
                                 </div>
                             </Link>
                         </Block>
@@ -79,9 +79,19 @@ const Block = styled.div`
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
 
+    
     &:hover{
         transform: scale(1.2);
         transition: 1s transform;
+
+        @media screen {
+            transform: none;
+        }
+    }
+
+    @media (max-height: 1000px) {
+        height: 150px;
+        width: 250px;
     }
 
     div{

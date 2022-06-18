@@ -3,13 +3,15 @@ import { Link } from "react-router-dom"
 import styled from "styled-components"
 import open from '../Assets/menu.svg'
 import close from '../Assets/close.svg'
+import iconGithub from '../Assets/Github-icons.png'
+import iconLinkedIn from '../Assets/LinkedIn-icons.png'
 
 export default function MyHeader(props){
 
     let menuStatus = true;
     
     function menuResponsive(event){
-        let nav = document.querySelector("nav")
+    let nav = document.querySelector("nav")
 
         if (menuStatus){
             menuStatus = false
@@ -30,21 +32,30 @@ export default function MyHeader(props){
 
             if (scroll > 10) {
                 header.style.backgroundColor = "rgba(24, 26, 43, 1)"
-            }
-            else{
+            } else{
                 header.style.background= "none"
             }
         })
 
         window.addEventListener('resize', function(){
             let nav = document.querySelector("nav")
-
             if (this.innerWidth > 1200) {
                 nav.style.display = 'flex'
             } else{
                 nav.style.display = 'none'
             }
         })
+
+        document.querySelector("header").querySelectorAll('a').forEach(e =>{
+            e.addEventListener('click', function(){
+                if (window.innerWidth < 1200){
+                    let nav = document.querySelector("nav")
+                    nav.style.display = 'none'
+                    e.parentNode.parentNode.querySelector('.menu').src = open
+                }
+            })
+        })
+
     }, [])
 
     return (
@@ -63,10 +74,10 @@ export default function MyHeader(props){
                     Contact
                 </Link>
                 <Link to='/LinkedIn'>
-                    LinkedIn
+                    <img src={iconLinkedIn} alt="linkedIn"/>
                 </Link>
                 <Link to='/GitHub'>
-                    GitHub
+                    <img src={iconGithub} alt="github"/>
                 </Link>
             </nav>
 
@@ -86,6 +97,12 @@ const Containt = styled.header`
     height: 100px;
     padding: 50px;
 
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     @media (max-width: 1200px) {
         nav{
             position: absolute;
@@ -97,9 +114,14 @@ const Containt = styled.header`
             left: 0;
             height: 100vh;
             width: 100vw;
-            padding-top: 10%;
+            padding: 20vh 0%;
             background-color: rgb(7, 8, 14);
             z-index: 1;
+            
+
+            & > *{
+                margin: auto;
+            }
         }
 
         .menu{
@@ -109,6 +131,7 @@ const Containt = styled.header`
         .logo{
             position: relative;
             z-index: 2;
+            margin: 0;
         }
     }
 
@@ -123,14 +146,14 @@ const Containt = styled.header`
     }
 
     & > *{
+
         animation: animation1 1s ease-in-out;
         
         &:nth-child(2n){
             animation: animation1 2s ease-in-out;
-        }
-
-        &:nth-child(3n){
-            animation: animation1 3s ease-in-out;
+            @media screen {
+                animation: none;
+            }
         }
 
         *{
@@ -140,6 +163,12 @@ const Containt = styled.header`
 
     a{
         color: white;
+
+        img{
+            filter: invert(100%);
+            width: 30px;
+            margin: 0;
+        }
 
         &:hover{
             text-shadow: 1px 1px 10px rgba(255,255,255, 1);

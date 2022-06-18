@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -14,7 +16,8 @@ body{
 }
 
 section{
-  padding: 20px;
+  margin-bottom: 50px;
+  padding: 0px 20px;
 }
 
 li{
@@ -26,11 +29,14 @@ a{
 }
 
 h1{
-  font-size: 40px;
+  font-size: 4em;
+  margin: 10px;
+  line-height: 50px;
+  font-family: 'Lobster', cursive;
 }
 
 h3{
-  font-size: 20px;
+  font-size: 25px;
 }
 
 p, a, li{
@@ -44,13 +50,11 @@ p, a, li{
   100%{background-position:10% 0%}
 }
 
-@media (min-height: 1000px) {
-  /* h1{
-    border: 1px solid red;
-  }
-
-  h3{
-    font-size: 2vw;
-  } */
-
+@media (max-height: 1000px) {
+    h1{
+        font-size: 3em;
+    }
+    h3{
+        font-size: 1em;
+    }
 }

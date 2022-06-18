@@ -10,6 +10,7 @@ export default function Home(props){
             <Content>
                 <div>
                     <h1>Samuel Dorismond</h1>
+                    <br />
                     <h3>Etudiant en B.U.T informatique.</h3>
                     <h3>Développeur Web.</h3>
                 </div>
@@ -36,11 +37,20 @@ const Content = styled.section`
         animation: animation 3s;
 
         h1{
-            font-size: 4em;
+            font-size: 5em;
         }
 
         h3{
             font-size: 1.5em;
+        }
+
+        @media (max-width: 1200px){
+            h1{
+                font-size: 3em;
+            }
+            h3{
+                font-size: 1em;
+            }
         }
     }
 
