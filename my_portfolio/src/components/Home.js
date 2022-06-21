@@ -14,7 +14,7 @@ export default function Home(props){
                     <h3>Etudiant en B.U.T informatique.</h3>
                     <h3>Développeur Web.</h3>
                 </div>
-                <img src={require('../Assets/test.png')} alt="perso" />
+                <img src={require('../Assets/photo.png')} alt="perso" />
             </Content>
             <Projets data={data}/>
         </div>
@@ -34,6 +34,7 @@ const Content = styled.section`
 
     div{
         position: absolute;
+        margin-top: 20%;
         animation: animation 3s;
 
         h1{
@@ -57,7 +58,7 @@ const Content = styled.section`
     img{
         width: auto;
         height: 100%;
-        opacity: 0.75;
+        opacity: 0.65;
         z-index: -1;
     }
 

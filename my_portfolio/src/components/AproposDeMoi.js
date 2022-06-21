@@ -12,7 +12,7 @@ export default function AproposDeMoi(props){
             <Content>
                 <h1>A propos de moi</h1>
                 <Description>
-                    <img src={require('../Assets/test.png')} alt="perso" />
+                    <img src={require('../Assets/photo.png')} alt="perso" />
                     <div>
                         <h3>Qui suis-je ?</h3>
                         <br />
@@ -68,9 +68,16 @@ const Content = styled.section`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5%;
     width: 100vw;
     height: 100%;
+
+
+    @media (max-width: 1200px){
+        
+            h1{
+                text-align: center;
+            }
+        }
 `
 
 const Description = styled.div`
@@ -80,7 +87,7 @@ const Description = styled.div`
     align-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    width: 90%;
+    width: 100%;
     padding: 5%;
     height: 100%;
 
@@ -98,23 +105,26 @@ const Description = styled.div`
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
 
         div{
+            position: relative;
             text-align: center;
-            width: 100%;
         }
     }
 
     img{
         width: auto;
-        height: 600px;
+        height: 400px;
         opacity: 0.75;
         z-index: -1;
     }
 
     div{
         margin: 20px;
-        width: 60%;
+        width: 50%;
     }
 
     ul{
@@ -134,8 +144,8 @@ const Description = styled.div`
         text-align: center;
 
         @media (max-width: 1200px){
-            border: 1px solid red;
             width: 100%;
+            margin: 20px 0px;
         }
     }
 
