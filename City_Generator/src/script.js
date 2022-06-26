@@ -8,7 +8,7 @@ import { WebGLRenderer } from 'three'
 const canvas = document.querySelector('canvas.webgl')
 
 // // Debug
-const gui = new dat.GUI()
+// const gui = new dat.GUI()
 
 // scene
 const scene = new THREE.Scene()
@@ -37,19 +37,24 @@ const pr = {
     Batiment_size: new THREE.Vector3(0.5, 0.5, 1),
     ecart: 0.1,
     HBatimentMini: 0.5, 
-    HBatimentMax: 1,
-    tronc_size: 1,
+    Quartier_Size: new THREE.Vector3(1, 1),
+    tronc_size: 2,
     feuille_size: 0.25,
     buisson_size: 0.1,
     nombreBuisson: 30,
-    Quartier_Size: new THREE.Vector3(1, 1),
     colorBackground: '#F0F0C6'
 }
-
+pr.HBatimentMax = Math.pow(pr.City_Size, 2)
 
 let Geometry = null
 let Material = null
 let City = null
+let change = 0
+
+function entierAleatoire(min, max)
+{
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 // Light
 const directionaLight = new THREE.DirectionalLight(pr.colorBackground, 0.5)
@@ -85,14 +90,14 @@ const generatorCity = () =>{
     City.rotation.x = - 1
     scene.add(City)
     
-    const TabContenuCity = ['Gray', 'Green', '#0096FF', 'Gray']
+    const TabContenuCity = ['Gray', 'Green', '#0096FF', "#e0cda9"]
     const TabColorArbre = ['#6B8E23', '#228B22']
     const tabTextureBatiment = [Batiment_1, Batiment_2, Batiment_3, Batiment_4]
     
     // Quartier
     for (let colonne = 0; colonne < pr.City_Size; colonne+=pr.Quartier_Size.y) {
         for (let ligne = 0; ligne < pr.City_Size; ligne+=pr.Quartier_Size.x){
-            var ColorContenu = TabContenuCity[ Math.abs(Math.round(Math.random() * TabContenuCity.length - 1)) ]
+            var ColorContenu = TabContenuCity[ entierAleatoire(0, TabContenuCity.length -1 ) ]
 
             Geometry = new THREE.PlaneGeometry(pr.Quartier_Size.x, pr.Quartier_Size.y)
             Material = new THREE.MeshStandardMaterial({ color: ColorContenu })
@@ -112,8 +117,8 @@ const generatorCity = () =>{
             for (let colonne = 0; colonne <= pr.Quartier_Size.y - pr.Batiment_size.y; colonne+=pr.Batiment_size.y) {
                 for (let ligne = 0; ligne <= pr.Quartier_Size.x - pr.Batiment_size.x; ligne+=pr.Batiment_size.x) {
                     
-                        pr.Batiment_size.z = Math.random() * pr.HBatimentMax + pr.HBatimentMini
-                        const TextureBatiment = tabTextureBatiment[ Math.abs(Math.round(Math.random() *tabTextureBatiment.length - 1)) ]
+                        pr.Batiment_size.z = entierAleatoire(pr.HBatimentMini, pr.HBatimentMax)
+                        const TextureBatiment = tabTextureBatiment[ entierAleatoire(0, tabTextureBatiment.length - 1) ]
 
                         Geometry = new THREE.BoxGeometry(pr.Batiment_size.x - pr.ecart, pr.Batiment_size.y - pr.ecart, pr.Batiment_size.z)
                         Material = new THREE.MeshStandardMaterial({ map: TextureBatiment })
@@ -132,8 +137,8 @@ const generatorCity = () =>{
             else if (ColorContenu == 'Green'){
                 // Park 
                 const Park = new THREE.Group()
-                var ColorContenuArbre = TabColorArbre[ Math.abs(Math.round(Math.random() * TabColorArbre.length - 1)) ]
-                pr.tronc_size =  Math.random() * pr.tronc_size + 0.25
+                var ColorContenuArbre = TabColorArbre[ entierAleatoire(0, TabColorArbre.length - 1) ]
+                pr.tronc_size =  entierAleatoire(1, pr.tronc_size)
 
                 Geometry = new THREE.BoxGeometry(0.1, 0.1, pr.tronc_size)
                 Material = new THREE.MeshStandardMaterial({ color: '#614b3a'})
@@ -147,7 +152,7 @@ const generatorCity = () =>{
                 const Feuille = new THREE.Mesh(Geometry, Material)
 
                 for (let i = 0; i < pr.nombreBuisson; i++) {
-                    var ColorContenuArbre = TabColorArbre[ Math.abs(Math.round(Math.random() * TabColorArbre.length - 1)) ]
+                    var ColorContenuArbre = TabColorArbre[ entierAleatoire(0, TabColorArbre.length - 1) ]
 
                     Geometry = new THREE.SphereGeometry(pr.buisson_size, 20, 20)
                     Material = new THREE.MeshStandardMaterial({ color: ColorContenuArbre})
@@ -174,8 +179,8 @@ generatorCity()
 // camera
 const camera = new THREE.PerspectiveCamera(50, sizes.width / sizes.height, 0.1, 100)
 camera.position.x = 0
-camera.position.y = 0.5
-camera.position.z = 5
+camera.position.y = 0.15
+camera.position.z = 0
 
 scene.add(camera)
 
@@ -210,9 +215,26 @@ const tick = () =>
 {
     const elapsedTime = clock.getElapsedTime()
 
-    camera.position.z = pr.City_Size * 2 + 1
+    camera.position.z = Math.log(pr.City_Size * 2) * 5
 
     City.rotation.z = Math.PI * elapsedTime / 10
+
+    window.addEventListener('scroll', function() {
+        if (this.scrollY > 0) {
+            change = (Math.round(this.scrollY / this.innerHeight) + 1)
+            if (change != pr.City_Size) {
+                pr.City_Size = change
+                generatorCity()
+            }
+        }
+    })
+
+    if ((Math.round(elapsedTime)%5) == 0) {
+        document.querySelector('canvas').style.filter = "invert(100%)"
+    }
+    else{
+        document.querySelector('canvas').style.filter = "none"
+    }
  
     // Render
     renderer.render(scene, camera)
@@ -222,4 +244,4 @@ const tick = () =>
 }
 tick()
 
-gui.add(pr, 'City_Size').min(1).max(20).step(1).onChange(generatorCity).name('Taille de la ville')
+// gui.add(pr, 'City_Size').min(1).max(20).step(1).onChange(generatorCity).name('Taille de la ville')

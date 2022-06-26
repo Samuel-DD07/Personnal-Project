@@ -8,52 +8,28 @@ html,
 body
 {
     background-color: #F0F0C6;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    height: 500vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 1000vh;
 }
 
-section{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5vmin;
-    height: 100vh;
-    width: 100vw;
-    color: #0E0E0E;
-}
-
-section div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-section div *{
-    margin: 10px;
-}
-
-button{
-    padding: 20px 40px;
-    font-size: 2vmin;
-    color: #0E0E0E;
-    background: none;
-    border: 2px solid #0E0E0E;
-    border-radius: 100px;
-    transition: 1s all;
-}
-
-button:hover{
-    background-color: #0E0E0E;
-    color: white;
-    transition: 1s all;
-}
-
-.webgl
-{
+canvas{
     position: fixed;
     top: 0;
-    left: 0;
-    outline: none;
+    width: 100vw;
+    height: 100vh;
+    transition: 1s all;
+}
+
+h1{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: difference;
+    color: aliceblue;
+    font-size: 10vw;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
 }
